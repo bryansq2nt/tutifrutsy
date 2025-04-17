@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import ProductContent from './ProductContent'
+import ProductView from './ProductView'
 import { Product } from '@/app/data/products'
 import fs from 'fs'
 import path from 'path'
@@ -48,7 +48,7 @@ export default async function ProductPage(props: PageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <ProductContent product={product} />
+        <ProductView product={product} />
       </div>
     </div>
   )
