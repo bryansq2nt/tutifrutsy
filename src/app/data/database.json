@@ -1,0 +1,761 @@
+[
+    {
+      "id": "three_milk_cake",
+      "name": {
+        "en": "Three Milk Cake",
+        "es": "Pastel de Tres Leches"
+      },
+      "description": {
+        "en": "Dive into a slice of heaven, made right here by our family! Our homemade Tres Leches is a super moist sponge cake soaked in three delicious kinds of milk, just like we remember enjoying at celebrations back home in El Salvador. It's incredibly rich, sweet, and pure comfort.",
+        "es": "¡Sumérgete en un pedazo de cielo, hecho aquí mismo por nuestra familia! Nuestro Tres Leches casero es un bizcocho súper húmedo bañado en tres deliciosos tipos de leche, tal como recordamos disfrutarlo en las celebraciones en nuestro querido El Salvador. Es increíblemente rico, dulce y puro confort."
+      },
+      "origin": {
+        "en": "While folks debate where it first started in Latin America, for us, Tres Leches is a taste of home, a dessert staple at birthdays and family gatherings in El Salvador. We bring that tradition straight to you.",
+        "es": "Aunque la gente debate dónde comenzó en Latinoamérica, para nosotros, el Tres Leches es un sabor a hogar, un postre básico en cumpleaños y reuniones familiares en El Salvador. Te traemos esa tradición directamente a ti."
+      },
+      "Health Benefits": {
+        "en": "Honestly, this cake is about pure joy and indulgence! You get some calcium from the milks, but mostly, it's a delicious treat made with love, best enjoyed for those special moments.",
+        "es": "Sinceramente, ¡este pastel es pura alegría e indulgencia! Obtienes algo de calcio de las leches, pero sobre todo, es un delicioso capricho hecho con amor, que se disfruta mejor en esos momentos especiales."
+      },
+      "Best way to eat": {
+        "en": "Served chilled, letting that milky goodness soak in! It's perfect as is, maybe with a little whipped cream on top if you're feeling fancy, just like at parties back home.",
+        "es": "¡Servido frío, dejando que esa bondad lechosa se absorba! Es perfecto tal cual, quizás con un poco de crema batida encima si te sientes elegante, como en las fiestas en casa."
+      }
+    },
+    {
+      "id": "sugarcane_stick",
+      "name": {
+        "en": "Sugarcane Stick",
+        "es": "Bara de caña"
+      },
+      "description": {
+        "en": "Remember chewing on these as kids back in El Salvador? This is a piece of fresh sugarcane stalk, tough outside but bursting with sweet, refreshing juice inside. It's nature's candy!",
+        "es": "¿Recuerdas masticar esto de niños allá en El Salvador? Este es un trozo de tallo de caña de azúcar fresca, duro por fuera pero lleno de jugo dulce y refrescante por dentro. ¡Es el dulce de la naturaleza!"
+      },
+      "origin": {
+        "en": "Sugarcane fields are a common sight in parts of El Salvador. Chewing on a fresh 'bara' is a simple pleasure many of us grew up with, straight from the source.",
+        "es": "Los cañaverales son una vista común en partes de El Salvador. Masticar una 'bara' fresca es un placer simple con el que muchos de nosotros crecimos, directo de la fuente."
+      },
+      "Health Benefits": {
+        "en": "Gives you a quick burst of natural energy! It's got some minerals too. Plus, chewing it is quite the workout for your jaw, just like we remember!",
+        "es": "¡Te da un rápido impulso de energía natural! También tiene algunos minerales. Además, masticarlo es todo un ejercicio para la mandíbula, ¡tal como lo recordamos!"
+      },
+      "Best way to eat": {
+        "en": "Just like back home: peel off the tough skin with your teeth (carefully!) or a knife, chew the inside fibers to get all that sweet juice, and spit out the fiber. A true taste of the Salvadoran countryside.",
+        "es": "Como en casa: pela la piel dura con los dientes (¡con cuidado!) o un cuchillo, mastica las fibras internas para obtener todo ese jugo dulce y escupe la fibra. Un verdadero sabor del campo salvadoreño."
+      }
+    },
+    {
+      "id": "banana_pudding_cake",
+      "name": {
+        "en": "Banana Pudding Cake",
+        "es": "Budín de banana"
+      },
+      "description": {
+        "en": "Taste our family's recipe! This homemade Banana Budín is made Salvadoran style – dense, incredibly moist, and packed with sweet, ripe banana flavor. It's not quite cake, not quite pudding, just pure deliciousness.",
+        "es": "¡Prueba la receta de nuestra familia! Este Budín de Banana casero está hecho al estilo salvadoreño: denso, increíblemente húmedo y lleno de sabor a banana dulce y madura. No es exactamente pastel, no es exactamente pudín, es pura delicia."
+      },
+      "origin": {
+        "en": "Making Budín is a way we've always used up those perfectly overripe bananas back in El Salvador. It's a humble, comforting dessert born from resourcefulness and a love for simple, good food.",
+        "es": "Hacer Budín es una forma en que siempre hemos aprovechado esas bananas perfectamente maduras en El Salvador. Es un postre humilde y reconfortante nacido del ingenio y el amor por la comida sencilla y buena."
+      },
+      "Health Benefits": {
+        "en": "Bananas bring potassium and vitamins! It's a homemade treat, so enjoy a slice knowing it's made with simple ingredients and lots of care.",
+        "es": "¡Las bananas aportan potasio y vitaminas! Es un capricho casero, así que disfruta de una rebanada sabiendo que está hecho con ingredientes simples y mucho cuidado."
+      },
+      "Best way to eat": {
+        "en": "We love it served warm, maybe with a little crema or just by itself. It’s the perfect companion to a cup of coffee, especially on a cool afternoon.",
+        "es": "Nos encanta servirlo caliente, quizás con un poco de crema o simplemente solo. Es el compañero perfecto para una taza de café, especialmente en una tarde fresca."
+      }
+    },
+    {
+      "id": "coconut",
+      "name": {
+        "en": "Coconut",
+        "es": "Coco"
+      },
+      "description": {
+        "en": "Ah, the taste of the Salvadoran coast! Coming from Ahuachapán and near Sonsonate – the 'coconut city' – we grew up surrounded by these. Nothing beats a fresh coconut, especially thinking of Metalío beach.",
+        "es": "¡Ah, el sabor de la costa salvadoreña! Viniendo de Ahuachapán y cerca de Sonsonate – la 'ciudad del coco' – crecimos rodeados de estos. Nada supera un coco fresco, especialmente pensando en la playa Metalío."
+      },
+      "origin": {
+        "en": "While coconuts traveled the world, they found a perfect home along El Salvador's coast, especially in Sonsonate. For us, they represent sunshine, beaches like Metalío, and refreshing hydration.",
+        "es": "Aunque los cocos viajaron por el mundo, encontraron un hogar perfecto en la costa de El Salvador, especialmente en Sonsonate. Para nosotros, representan sol, playas como Metalío e hidratación refrescante."
+      },
+      "Health Benefits": {
+        "en": "The 'agua de coco' is nature's perfect hydrator, full of electrolytes. The white 'carne' gives you healthy fats and fiber. Just pure, natural goodness.",
+        "es": "El 'agua de coco' es el hidratante perfecto de la naturaleza, lleno de electrolitos. La 'carne' blanca te da grasas saludables y fibra. Pura bondad natural."
+      },
+      "Best way to eat": {
+        "en": "Crack it open and drink the water fresh! That's the best. Then scoop out the meat to eat raw or use in traditional sweets like 'conserva de coco'. A true taste of our Salvadoran coast.",
+        "es": "¡Ábrelo y bebe el agua fresca! Eso es lo mejor. Luego saca la carne para comerla cruda o usarla en dulces tradicionales como la 'conserva de coco'. Un verdadero sabor de nuestra costa salvadoreña."
+      }
+    },
+    {
+      "id": "crazy_corn",
+      "name": {
+        "en": "Crazy Corn",
+        "es": "Elote loco"
+      },
+      "description": {
+        "en": "Get ready for a Salvadoran street food classic! Our Elote Loco is just like you'd find at the fairs back home – boiled corn smothered in mayo, mustard, salsa inglesa, ketchup, and salty cheese. It's messy, fun, and absolutely delicious!",
+        "es": "¡Prepárate para un clásico de la comida callejera salvadoreña! Nuestro Elote Loco es como el que encontrarías en las ferias de nuestro país: elote hervido cubierto de mayonesa, mostaza, salsa inglesa, kétchup y queso salado. ¡Es desordenado, divertido y absolutamente delicioso!"
+      },
+      "origin": {
+        "en": "This amazing creation is pure Salvadoran ingenuity! Taking simple corn on the cob and dressing it up with all the sauces is a hallmark of our vibrant street food culture.",
+        "es": "¡Esta increíble creación es puro ingenio salvadoreño! Tomar un simple elote en mazorca y vestirlo con todas las salsas es un sello distintivo de nuestra vibrante cultura de comida callejera."
+      },
+      "Health Benefits": {
+        "en": "You get fiber from the corn! The 'loco' part is all about the flavor party. Enjoy it as a fun treat, a taste of Salvadoran celebrations.",
+        "es": "¡Obtienes fibra del maíz! La parte 'loca' se trata de la fiesta de sabores. Disfrútalo como un capricho divertido, un sabor de las celebraciones salvadoreñas."
+      },
+      "Best way to eat": {
+        "en": "Grab it and go! Don't be afraid to get a little messy – that's part of the fun. Best enjoyed hot and fresh, just like at a Salvadoran 'feria'.",
+        "es": "¡Tómalo y listo! No tengas miedo de ensuciarte un poco, es parte de la diversión. Se disfruta mejor caliente y fresco, como en una 'feria' salvadoreña."
+      }
+    },
+    {
+      "id": "empanada",
+      "name": {
+        "en": "Empanada",
+        "es": "Empanada"
+      },
+      "description": {
+        "en": "A little pocket of homemade goodness! Our empanadas are savory turnovers, filled and folded by hand, reminding us of quick snacks grabbed between errands back in El Salvador.",
+        "es": "¡Un pequeño bolsillo de bondad casera! Nuestras empanadas son pastelitos salados, rellenos y doblados a mano, que nos recuerdan a los snacks rápidos que tomábamos entre recados allá en El Salvador."
+      },
+      "origin": {
+        "en": "Empanadas are loved all over Latin America, a tradition brought from Spain. Each place has its twist, but for us, they represent a quick, satisfying, and familiar taste of home.",
+        "es": "Las empanadas son amadas en toda América Latina, una tradición traída de España. Cada lugar tiene su toque, pero para nosotros, representan un sabor rápido, satisfactorio y familiar de casa."
+      },
+      "Health Benefits": {
+        "en": "Depends on the filling! Ours offer protein if filled with meat, or vitamins if veggie-filled. The pastry gives you energy. A satisfying bite!",
+        "es": "¡Depende del relleno! Las nuestras ofrecen proteínas si están rellenas de carne, o vitaminas si son de verduras. La masa te da energía. ¡Un bocado satisfactorio!"
+      },
+      "Best way to eat": {
+        "en": "Perfect warm, maybe with a little 'curtido' (pickled slaw) on the side or a splash of hot sauce. Great as a snack or a light meal.",
+        "es": "Perfectas calientes, quizás con un poco de 'curtido' al lado o un chorrito de salsa picante. Geniales como snack o comida ligera."
+      }
+    },
+    {
+      "id": "flan",
+      "name": {
+        "en": "Flan",
+        "es": "Flan"
+      },
+      "description": {
+        "en": "Silky, smooth, and elegant – a dessert we always saved for special occasions in El Salvador. Our flan is a creamy baked custard with that signature soft caramel topping.",
+        "es": "Sedoso, suave y elegante – un postre que siempre guardábamos para ocasiones especiales en El Salvador. Nuestro flan es una natilla cremosa horneada con esa característica cobertura de caramelo suave."
+      },
+      "origin": {
+        "en": "Flan traveled from Europe to Latin America and became a true classic. Making flan for guests was always a sign of hospitality in our Salvadoran homes.",
+        "es": "El flan viajó desde Europa hasta América Latina y se convirtió en un verdadero clásico. Hacer flan para los invitados siempre fue una señal de hospitalidad en nuestros hogares salvadoreños."
+      },
+      "Health Benefits": {
+        "en": "Made with eggs and milk, so you get some protein and calcium. It's definitely a dessert, best enjoyed as a sweet, smooth ending to your meal.",
+        "es": "Hecho con huevos y leche, así que obtienes algo de proteínas y calcio. Definitivamente es un postre, que se disfruta mejor como un final dulce y suave para tu comida."
+      },
+      "Best way to eat": {
+        "en": "Served chilled, letting the 'miel' (caramel) drizzle down the sides. It’s perfect just like that, simple and elegant.",
+        "es": "Servido frío, dejando que la 'miel' (caramelo) gotee por los lados. Es perfecto así, simple y elegante."
+      }
+    },
+    {
+      "id": "sweet_granadilla",
+    "name": {
+      "en": "Sweet Granadilla",
+      "es": "Granadilla Dulce"
+    },
+    "description": {
+      "en": "A delightful tropical surprise! Crack open the smooth, hard shell to find a sweet, jelly-like pulp filled with tiny edible black seeds. Its unique, fragrant sweetness is incredibly refreshing and unlike anything else.",
+      "es": "¡Una deliciosa sorpresa tropical! Rompe la cáscara lisa y dura para encontrar una pulpa dulce y gelatinosa llena de diminutas semillas negras comestibles. Su dulzura única y fragante es increíblemente refrescante y diferente a todo lo demás."
+    },
+    "origin": {
+      "en": "These treasures come from the Andes mountains in South America. While not originally from El Salvador, we love offering this sweet, exotic fruit that thrives in tropical climates.",
+      "es": "Estos tesoros provienen de las montañas de los Andes en América del Sur. Aunque no son originarias de El Salvador, nos encanta ofrecer esta fruta dulce y exótica que prospera en climas tropicales."
+    },
+    "Health Benefits": {
+      "en": "Sweet Granadillas are hydrating and provide vitamins like A, C, and K, plus essential minerals like potassium and iron. The fiber is great for digestion, too!",
+      "es": "Las Granadillas Dulces son hidratantes y proporcionan vitaminas como A, C y K, además de minerales esenciales como potasio y hierro. ¡La fibra también es excelente para la digestión!"
+    },
+    "Best way to eat": {
+      "en": "The best way is simple: crack or cut it open and scoop out the sweet pulp and seeds with a spoon! It's also delicious blended into juices or added to fruit salads and desserts for a tropical twist.",
+      "es": "La mejor manera es simple: ¡rómpela o córtala y saca la pulpa dulce y las semillas con una cuchara! También es deliciosa licuada en jugos o añadida a ensaladas de frutas y postres para un toque tropical."
+    }
+    },
+    {
+      "id": "granola_bowl",
+      "name": {
+        "en": "Granola Bowl with Yogurt & Fruit", 
+        "es": "Tazón de Granola con Yogur y Fruta" 
+      },
+      "description": {
+        "en": "A wholesome and delicious start or snack! We layer crunchy granola with creamy yogurt and top it with fresh, seasonal fruits. It's a satisfying mix of textures and natural sweetness.",
+        "es": "¡Un comienzo o snack saludable y delicioso! Colocamos capas de granola crujiente con yogur cremoso y lo coronamos con frutas frescas de temporada. Es una mezcla satisfactoria de texturas y dulzura natural."
+      },
+      "origin": {
+        "en": "While granola itself is more modern, combining wholesome ingredients like oats, nuts, yogurt, and fresh fruit feels like a natural extension of enjoying simple, nutritious foods, similar to how we love fresh fruit salads back in El Salvador.",
+        "es": "Aunque la granola en sí es más moderna, combinar ingredientes saludables como avena, nueces, yogur y fruta fresca se siente como una extensión natural de disfrutar comidas simples y nutritivas, similar a cómo amamos las ensaladas de frutas frescas en El Salvador."
+      },
+      "Health Benefits": {
+        "en": "A balanced choice! You get fiber and energy from the granola, protein and calcium from the yogurt, and lots of vitamins and antioxidants from the fresh fruit. Great for gut health too!",
+        "es": "¡Una opción equilibrada! Obtienes fibra y energía de la granola, proteínas y calcio del yogur, y muchas vitaminas y antioxidantes de la fruta fresca. ¡Excelente también para la salud intestinal!"
+      },
+      "Best way to eat": {
+        "en": "Enjoy it right away while the granola is still crunchy and the fruit is fresh! Perfect for breakfast or a healthy, filling snack.",
+        "es": "¡Disfrútalo de inmediato mientras la granola aún está crujiente y la fruta fresca! Perfecto para el desayuno o un snack saludable y llenador."
+      }
+  },
+    {
+      "id": "guava",
+      "name": {
+        "en": "Guava",
+        "es": "Guayaba"
+      },
+      "description": {
+        "en": "That unique tropical fragrance! Guavas have that special sweet, slightly musky smell and flavor that instantly transports us back to El Salvador. The pink or white flesh is soft and full of tiny edible seeds.",
+        "es": "¡Esa fragancia tropical única! Las guayabas tienen ese olor y sabor especial, dulce y ligeramente almizclado que nos transporta instantáneamente a El Salvador. La pulpa rosa o blanca es suave y llena de diminutas semillas comestibles."
+      },
+      "origin": {
+        "en": "Guavas grow beautifully in El Salvador. We love making 'refresco de guayaba' (guava juice) or eating them fresh off the tree when visiting family.",
+        "es": "Las guayabas crecen hermosamente en El Salvador. Nos encanta hacer 'refresco de guayaba' o comerlas frescas del árbol cuando visitamos a la familia."
+      },
+      "Health Benefits": {
+        "en": "Did you know they have tons of Vitamin C? More than oranges! Plus fiber and antioxidants. A real powerhouse fruit.",
+        "es": "¿Sabías que tienen toneladas de Vitamina C? ¡Más que las naranjas! Además de fibra y antioxidantes. Una verdadera fruta poderosa."
+      },
+      "Best way to eat": {
+        "en": "Wash it and eat it whole, skin and all! Or blend it into a refreshing 'fresco'. We also love the 'bocadillo de guayaba', a sweet guava paste.",
+        "es": "¡Lávala y cómela entera, con piel y todo! O licúala en un refrescante 'fresco'. También nos encanta el 'bocadillo de guayaba', una pasta dulce de guayaba."
+      }
+    },
+    {
+      "id": "jicama",
+      "name": {
+        "en": "Jicama",
+        "es": "Jicama"
+      },
+      "description": {
+        "en": "Crunchy, cool, and refreshing! Peel this root to find a crisp, juicy white flesh that's slightly sweet. Perfect for beating the heat, just like we do back home.",
+        "es": "¡Crujiente, fresca y refrescante! Pela esta raíz para encontrar una pulpa blanca crujiente y jugosa que es ligeramente dulce. Perfecta para combatir el calor, como hacemos en casa."
+      },
+      "origin": {
+        "en": "Jicama is a favorite street snack in Mexico and Central America, including El Salvador. It's often sold in bags, already sliced and ready to eat.",
+        "es": "La jícama es un snack callejero favorito en México y Centroamérica, incluyendo El Salvador. A menudo se vende en bolsas, ya cortada y lista para comer."
+      },
+      "Health Benefits": {
+        "en": "Low in calories, high in fiber (the kind that's good for your gut!), and has a good dose of Vitamin C. Healthy and hydrating!",
+        "es": "Baja en calorías, alta en fibra (¡del tipo bueno para tu intestino!), y tiene una buena dosis de Vitamina C. ¡Saludable e hidratante!"
+      },
+      "Best way to eat": {
+        "en": "Raw is best! We slice it into sticks ('palitos') and sprinkle it with lime juice, salt, and 'alguashte' (ground pumpkin seed) or chili powder. Adds amazing crunch to salads too!",
+        "es": "¡Cruda es lo mejor! La cortamos en 'palitos' y la espolvoreamos con jugo de limón, sal y 'alguashte' (semilla de calabaza molida) o chile en polvo. ¡También añade un crujido increíble a las ensaladas!"
+      }
+    },
+    {
+      "id": "jocote",
+      "name": {
+        "en": "Jocote",
+        "es": "Jocote"
+      },
+      "description": {
+        "en": "A true taste of El Salvador! These little oval fruits (also called Spanish Plum) are everywhere when in season. We love their sweet and tangy flavor, eaten fresh with a pinch of salt.",
+        "es": "¡Un verdadero sabor de El Salvador! Estas pequeñas frutas ovaladas (también llamadas Ciruela Española) están por todas partes cuando es temporada. Nos encanta su sabor dulce y ácido, comidas frescas con una pizca de sal."
+      },
+      "origin": {
+        "en": "Jocote trees grow wild and are cultivated all over El Salvador and Central America. Picking jocotes is a fond memory for many Salvadorans.",
+        "es": "Los árboles de jocote crecen silvestres y se cultivan en todo El Salvador y Centroamérica. Recoger jocotes es un grato recuerdo para muchos salvadoreños."
+      },
+      "Health Benefits": {
+        "en": "They give you a nice boost of Vitamin C and antioxidants. A refreshing, natural snack from back home.",
+        "es": "Te dan un buen impulso de Vitamina C y antioxidantes. Un snack refrescante y natural de nuestra tierra."
+      },
+      "Best way to eat": {
+        "en": "Eat them ripe and fresh, often with a little salt sprinkled on top – it brings out the flavor! Greenish ones can be boiled or stewed too.",
+        "es": "Cómelos maduros y frescos, a menudo con un poco de sal espolvoreada por encima – ¡resalta el sabor! Los que están verdosos también se pueden hervir o guisar."
+      }
+    },
+    {
+      "id": "honey_jocote",
+      "name": {
+        "en": "Honey Jocote",
+        "es": "Jocote miel"
+      },
+      "description": {
+        "en": "A traditional Salvadoran sweet! We cook jocotes slowly in a sugary syrup, often with cinnamon, until they become a delicious candied treat known as 'jocotes en miel'. A way to preserve the harvest.",
+        "es": "¡Un dulce tradicional salvadoreño! Cocinamos los jocotes lentamente en un almíbar azucarado, a menudo con canela, hasta que se convierten en un delicioso dulce confitado conocido como 'jocotes en miel'. Una forma de conservar la cosecha."
+      },
+      "origin": {
+        "en": "Making fruits 'en miel' (in honey/syrup) is a classic preservation method in El Salvador. Jocotes en miel are especially popular during certain holidays and seasons.",
+        "es": "Hacer frutas 'en miel' (en almíbar) es un método clásico de conservación en El Salvador. Los jocotes en miel son especialmente populares durante ciertas festividades y temporadas."
+      },
+      "Health Benefits": {
+        "en": "It's definitely a sweet treat! You get some vitamins from the fruit, but the sugar makes it an indulgence. Enjoy it as a special dessert.",
+        "es": "¡Definitivamente es un dulce! Obtienes algunas vitaminas de la fruta, pero el azúcar lo convierte en una indulgencia. Disfrútalo como un postre especial."
+      },
+      "Best way to eat": {
+        "en": "Served chilled as a dessert, with the sweet syrup. It’s a comforting taste of Salvadoran home cooking.",
+        "es": "Servido frío como postre, con el dulce almíbar. Es un sabor reconfortante de la cocina casera salvadoreña."
+      }
+    },
+    {
+      "id": "sugarcane_juice",
+      "name": {
+        "en": "Sugarcane Juice",
+        "es": "Jugo de caña"
+      },
+      "description": {
+        "en": "So refreshing on a hot day! We press fresh sugarcane stalks right here to give you that pure, sweet juice ('guarapo'). A squeeze of lime cuts the sweetness perfectly, just like we drink it in El Salvador.",
+        "es": "¡Tan refrescante en un día caluroso! Prensamos tallos frescos de caña de azúcar aquí mismo para darte ese jugo puro y dulce ('guarapo'). Un chorrito de lima corta la dulzura perfectamente, tal como lo bebemos en El Salvador."
+      },
+      "origin": {
+        "en": "Fresh sugarcane juice vendors are a common sight in markets and roadsides across El Salvador and Latin America. It's instant energy and hydration, straight from nature.",
+        "es": "Los vendedores de jugo de caña fresca son una vista común en mercados y carreteras de El Salvador y América Latina. Es energía e hidratación instantáneas, directamente de la naturaleza."
+      },
+      "Health Benefits": {
+        "en": "Gives you quick natural energy and some electrolytes. It's sweet, so best enjoyed as a refreshing treat, especially with that vitamin C boost from lime!",
+        "es": "Te da energía natural rápida y algunos electrolitos. Es dulce, así que se disfruta mejor como un capricho refrescante, ¡especialmente con ese impulso de vitamina C de la lima!"
+      },
+      "Best way to eat": {
+        "en": "Drink it icy cold, right after it's pressed, with a generous squeeze of lime. There's nothing quite like it!",
+        "es": "Bébelo bien frío, justo después de prensarlo, con un generoso chorrito de lima. ¡No hay nada igual!"
+      }
+    },
+    {
+      "id": "yellow_mango",
+      "name": {
+        "en": "Yellow Mango",
+        "es": "Mango amarillo"
+      },
+      "description": {
+        "en": "Pure tropical sweetness! These smooth, golden mangoes (like Ataulfo) barely have any fiber and taste like sunshine. They remind us of the best part of mango season back home.",
+        "es": "¡Pura dulzura tropical! Estos mangos suaves y dorados (como el Ataulfo) apenas tienen fibra y saben a sol. Nos recuerdan la mejor parte de la temporada de mango en casa."
+      },
+      "origin": {
+        "en": "While mangoes came from Asia long ago, these sweet yellow varieties thrive in Latin America. Mexico developed the Ataulfo, a favorite we love to offer.",
+        "es": "Aunque los mangos vinieron de Asia hace mucho tiempo, estas dulces variedades amarillas prosperan en América Latina. México desarrolló el Ataulfo, un favorito que nos encanta ofrecer."
+      },
+      "Health Benefits": {
+        "en": "Full of Vitamin C and A! Great for your eyes and skin. A delicious way to get healthy nutrients.",
+        "es": "¡Lleno de Vitamina C y A! Excelente para tus ojos y piel. Una deliciosa forma de obtener nutrientes saludables."
+      },
+      "Best way to eat": {
+        "en": "Perfect fresh! Just peel, slice, and enjoy that intense sweetness. Also amazing in 'frescos' (juices) or desserts.",
+        "es": "¡Perfecto fresco! Simplemente pela, corta y disfruta de esa intensa dulzura. También increíble en 'frescos' (jugos) o postres."
+      }
+    },
+    {
+      "id": "ball_mango",
+      "name": {
+        "en": "Ball Mango",
+        "es": "Mango bola"
+      },
+      "description": {
+        "en": "These rounder mangoes ('mango bola') are a familiar sight in Salvadoran markets. They might have a bit more fiber but are still juicy and flavorful, perfect whether slightly tart or fully sweet.",
+        "es": "Estos mangos más redondos ('mango bola') son una vista familiar en los mercados salvadoreños. Pueden tener un poco más de fibra pero siguen siendo jugosos y sabrosos, perfectos ya sea ligeramente ácidos o completamente dulces."
+      },
+      "origin": {
+        "en": "These common mango varieties grow well in El Salvador's climate. They represent the everyday mango many of us enjoyed growing up.",
+        "es": "Estas variedades comunes de mango crecen bien en el clima de El Salvador. Representan el mango cotidiano que muchos de nosotros disfrutamos al crecer."
+      },
+      "Health Benefits": {
+        "en": "Like all mangoes, they give you Vitamins C and A, fiber, and antioxidants. Healthy and delicious!",
+        "es": "Como todos los mangos, te dan Vitaminas C y A, fibra y antioxidantes. ¡Saludables y deliciosos!"
+      },
+      "Best way to eat": {
+        "en": "Enjoy fresh when ripe! If they're a bit green ('celeque'), slice them with salt and lime. Sweet ones are great plain or in a 'refresco'.",
+        "es": "¡Disfruta fresco cuando esté maduro! Si están un poco verdes ('celeques'), córtalos con sal y limón. Los dulces son geniales solos o en un 'refresco'."
+      }
+    },
+    {
+      "id": "honey_mango",
+      "name": {
+        "en": "Honey Mango",
+        "es": "Mango miel"
+      },
+      "description": {
+        "en": "Just like biting into pure honey! These small, yellow, fiberless mangoes (often Ataulfo) are incredibly sweet and smooth. A real treat!",
+        "es": "¡Como morder miel pura! Estos mangos pequeños, amarillos y sin fibra (a menudo Ataulfo) son increíblemente dulces y suaves. ¡Un verdadero placer!"
+      },
+      "origin": {
+        "en": "These 'honey' mangoes became super popular, and we love bringing this extra-sweet variety, often grown in Mexico or Central America, to you.",
+        "es": "Estos mangos 'miel' se volvieron súper populares, y nos encanta traerte esta variedad extra dulce, a menudo cultivada en México o Centroamérica."
+      },
+      "Health Benefits": {
+        "en": "A fantastic source of Vitamins C and A. Their natural sweetness is a healthy way to satisfy that sweet tooth.",
+        "es": "Una fuente fantástica de Vitaminas C y A. Su dulzura natural es una forma saludable de satisfacer ese antojo de dulce."
+      },
+      "Best way to eat": {
+        "en": "Best eaten fresh to truly appreciate that honey-like sweetness. Slice and scoop, or blend into the smoothest mango smoothie ever.",
+        "es": "Se come mejor fresco para apreciar verdaderamente esa dulzura similar a la miel. Corta y saca con cuchara, o licúa en el batido de mango más suave que hayas probado."
+      }
+    },
+    {
+      "id": "gold_mango",
+      "name": {
+        "en": "Gold Mango",
+        "es": "Mango oro"
+      },
+      "description": {
+        "en": "A treasure of flavor! 'Mango Oro' refers to beautiful golden mangoes known for their rich sweetness. They remind us of the prized mangoes from the best trees back home.",
+        "es": "¡Un tesoro de sabor! 'Mango Oro' se refiere a hermosos mangos dorados conocidos por su rica dulzura. Nos recuerdan a los mangos apreciados de los mejores árboles en casa."
+      },
+      "origin": {
+        "en": "These premium yellow mango varieties are grown across tropical America. We select the best ones that remind us of the quality we expect in El Salvador.",
+        "es": "Estas variedades premium de mango amarillo se cultivan en toda América tropical. Seleccionamos los mejores que nos recuerdan la calidad que esperamos en El Salvador."
+      },
+      "Health Benefits": {
+        "en": "Packed with Vitamin C, Vitamin A, antioxidants, and fiber. A delicious way to nourish your body.",
+        "es": "Repleto de Vitamina C, Vitamina A, antioxidantes y fibra. Una deliciosa forma de nutrir tu cuerpo."
+      },
+      "Best way to eat": {
+        "en": "Enjoy ripe and fresh! Slice and eat, add to fruit salads ('ensalada de frutas'), or blend into a rich, golden 'refresco'.",
+        "es": "¡Disfruta maduro y fresco! Corta y come, añade a ensaladas de frutas, o licúa en un 'refresco' rico y dorado."
+      }
+    },
+    {
+      "id": "green_mango",
+      "name": {
+        "en": "Green Mango",
+        "es": "Mango verde"
+      },
+      "description": {
+        "en": "That tangy crunch we love in El Salvador! Green mango ('mango celeque') is all about that firm texture and refreshing sourness. We grew up eating this with salt and lime on hot afternoons.",
+        "es": "¡Ese crujido ácido que amamos en El Salvador! El mango verde ('mango celeque') se trata de esa textura firme y refrescante acidez. Crecimos comiendo esto con sal y limón en las tardes calurosas."
+      },
+      "origin": {
+        "en": "Eating mangoes green is a huge tradition across El Salvador and much of Latin America. It's a simple, everyday snack enjoyed by everyone.",
+        "es": "Comer mangos verdes es una gran tradición en El Salvador y gran parte de América Latina. Es un snack simple y cotidiano disfrutado por todos."
+      },
+      "Health Benefits": {
+        "en": "Lots of Vitamin C! And it's lower in sugar than ripe mangoes. That tartness really wakes up your taste buds.",
+        "es": "¡Mucha Vitamina C! Y es más bajo en azúcar que los mangos maduros. Esa acidez realmente despierta tus papilas gustativas."
+      },
+      "Best way to eat": {
+        "en": "The Salvadoran way: sliced, with salt, lime juice, and maybe some 'alguashte' (ground pumpkin seed) or chili powder. So simple, so good!",
+        "es": "Al estilo salvadoreño: en rodajas, con sal, jugo de limón y quizás un poco de 'alguashte' (semilla de calabaza molida) o chile en polvo. ¡Tan simple, tan bueno!"
+      }
+    },
+    {
+      "id": "honey_jar",
+      "name": {
+        "en": "Honey Jar",
+        "es": "Bote de Miel"
+      },
+      "description": {
+        "en": "Sweetness from nature, bottled with care by our family. We source quality honey, reminiscent of the local honey sometimes available back home, perfect for sweetening your day.",
+        "es": "Dulzura de la naturaleza, embotellada con cuidado por nuestra familia. Obtenemos miel de calidad, reminiscente de la miel local a veces disponible en casa, perfecta para endulzar tu día."
+      },
+      "origin": {
+        "en": "People have loved honey forever! While we don't keep bees ourselves, we carefully select and jar this honey, offering a taste of natural sweetness.",
+        "es": "¡La gente ha amado la miel desde siempre! Aunque no tenemos abejas nosotros mismos, seleccionamos y envasamos cuidadosamente esta miel, ofreciendo un sabor de dulzura natural."
+      },
+      "Health Benefits": {
+        "en": "Provides natural energy. Raw honey is known for having antioxidants and soothing properties. A natural alternative to refined sugar.",
+        "es": "Proporciona energía natural. La miel cruda es conocida por tener antioxidantes y propiedades calmantes. Una alternativa natural al azúcar refinado."
+      },
+      "Best way to eat": {
+        "en": "Drizzle on fruit, yogurt, or toast. Sweeten your coffee or tea. Use it in recipes or enjoy a simple spoonful!",
+        "es": "Rocía sobre fruta, yogur o tostadas. Endulza tu café o té. ¡Úsala en recetas o disfruta de una simple cucharada!"
+      }
+    },
+    {
+      "id": "nance",
+      "name": {
+        "en": "Nance",
+        "es": "Nance"
+      },
+      "description": {
+        "en": "That unforgettable strong, sweet, slightly cheesy smell! Nance is a unique Salvadoran favorite. These small yellow fruits have a powerful aroma and a flavor you won't forget.",
+        "es": "¡Ese inolvidable olor fuerte, dulce y ligeramente a queso! El Nance es un favorito salvadoreño único. Estas pequeñas frutas amarillas tienen un aroma potente y un sabor que no olvidarás."
+      },
+      "origin": {
+        "en": "Nance trees are common in El Salvador. Their distinct smell fills the air when they are in season or when someone is making 'fresco de nance' or 'nance en dulce'.",
+        "es": "Los árboles de Nance son comunes en El Salvador. Su olor distintivo llena el aire cuando están en temporada o cuando alguien está haciendo 'fresco de nance' o 'nance en dulce'."
+      },
+      "Health Benefits": {
+        "en": "They offer Vitamin C and fiber. That strong smell comes from unique compounds that might have health benefits too!",
+        "es": "Ofrecen Vitamina C y fibra. ¡Ese olor fuerte proviene de compuestos únicos que también podrían tener beneficios para la salud!"
+      },
+      "Best way to eat": {
+        "en": "Many Salvadorans eat them fresh with salt. They're also preserved in syrup ('en dulce'), made into drinks ('fresco'), or used for ice cream.",
+        "es": "Muchos salvadoreños los comen frescos con sal. También se conservan en almíbar ('en dulce'), se hacen bebidas ('fresco') o se usan para helados."
+      }
+    },
+    {
+      "id": "bread_with_beans",
+      "name": {
+        "en": "Bread with Beans",
+        "es": "Pan con frijoles"
+      },
+      "description": {
+        "en": "A simple, homemade taste of El Salvador! We spread hearty refried beans on a soft bread roll. Back home, this is the kind of quick, filling breakfast or snack our moms would make for us, pure comfort food.",
+        "es": "¡Un sabor simple y casero de El Salvador! Untamos abundantes frijoles refritos en un panecillo suave. En casa, este es el tipo de desayuno o merienda rápida y llenadora que nuestras mamás nos preparaban, pura comida reconfortante."
+      },
+      "origin": {
+        "en": "Beans and bread are staples everywhere, but this specific combo is a go-to in Salvadoran households. It's quick, affordable, and always hits the spot.",
+        "es": "Los frijoles y el pan son básicos en todas partes, pero este combo específico es un recurso habitual en los hogares salvadoreños. Es rápido, asequible y siempre da en el clavo."
+      },
+      "Health Benefits": {
+        "en": "Great protein and fiber from the beans! Plus energy from the bread. A simple, wholesome, and filling choice made with love.",
+        "es": "¡Gran proteína y fibra de los frijoles! Además de energía del pan. Una opción simple, saludable y llenadora hecha con amor."
+      },
+      "Best way to eat": {
+        "en": "Warm is best! Perfect for breakfast with a 'cafecito', or anytime you need a quick, satisfying bite that tastes like home.",
+        "es": "¡Caliente es lo mejor! Perfecto para el desayuno con un 'cafecito', o en cualquier momento que necesites un bocado rápido y satisfactorio que sepa a hogar."
+      }
+    },
+    {
+      "id": "bread_with_egg",
+      "name": {
+        "en": "Bread with Egg",
+        "es": "Pan con huevo"
+      },
+      "description": {
+        "en": "A classic Salvadoran breakfast, made simply by our family. Scrambled or fried eggs served with a piece of bread – it's how many of us start the day back home. Simple, nutritious, and satisfying.",
+        "es": "Un desayuno clásico salvadoreño, hecho sencillamente por nuestra familia. Huevos revueltos o fritos servidos con un trozo de pan – es como muchos de nosotros empezamos el día en casa. Simple, nutritivo y satisfactorio."
+      },
+      "origin": {
+        "en": "Eggs and bread are universal, but this straightforward preparation is a comforting and familiar breakfast staple in El Salvador.",
+        "es": "Los huevos y el pan son universales, pero esta preparación sencilla es un básico reconfortante y familiar del desayuno en El Salvador."
+      },
+      "Health Benefits": {
+        "en": "Protein power from the eggs! Plus energy from the bread. A great way to fuel your morning, homemade style.",
+        "es": "¡Poder proteico de los huevos! Además de energía del pan. Una excelente manera de alimentar tu mañana, estilo casero."
+      },
+      "Best way to eat": {
+        "en": "Enjoy it hot for breakfast! Maybe add a little Salvadoran crema or a side of beans to make it a full meal.",
+        "es": "¡Disfrútalo caliente para el desayuno! Quizás añade un poco de crema salvadoreña o un acompañamiento de frijoles para convertirlo en una comida completa."
+      }
+    },
+    {
+      "id": "papaya",
+      "name": {
+        "en": "Papaya",
+        "es": "Papaya"
+      },
+      "description": {
+        "en": "Sweet, buttery, and so good for you! Papayas grow wonderfully in El Salvador. We love their vibrant orange flesh and sweet taste. The little black seeds have a peppery kick!",
+        "es": "¡Dulce, mantecosa y tan buena para ti! Las papayas crecen maravillosamente en El Salvador. Nos encanta su vibrante pulpa naranja y su sabor dulce. ¡Las pequeñas semillas negras tienen un toque picante!"
+      },
+      "origin": {
+        "en": "These tropical beauties are native to our part of the world, Central America. Having fresh papaya for breakfast is a common and healthy start to the day in El Salvador.",
+        "es": "Estas bellezas tropicales son nativas de nuestra parte del mundo, Centroamérica. Tomar papaya fresca para el desayuno es un comienzo común y saludable del día en El Salvador."
+      },
+      "Health Benefits": {
+        "en": "Packed with Vitamin C and A, plus the enzyme papain which helps your tummy digest food. Great for staying healthy!",
+        "es": "Repleta de Vitamina C y A, además de la enzima papaína que ayuda a tu estómago a digerir los alimentos. ¡Genial para mantenerse saludable!"
+      },
+      "Best way to eat": {
+        "en": "Best eaten fresh! Slice it, scoop out the seeds, and enjoy. A squeeze of lime makes it even better. Perfect in fruit salads or blended into a 'licuado' (smoothie).",
+        "es": "¡Se come mejor fresca! Córtala, saca las semillas y disfruta. Un chorrito de lima la hace aún mejor. Perfecta en ensaladas de frutas o licuada en un 'licuado' (batido)."
+      }
+    },
+    {
+      "id": "pineapple",
+      "name": {
+        "en": "Pineapple",
+        "es": "Piña"
+      },
+      "description": {
+        "en": "That sweet, tangy tropical star! Nothing says sunshine like a juicy pineapple. We love offering this refreshing fruit, a favorite everywhere, including back home.",
+        "es": "¡Esa estrella tropical dulce y ácida! Nada dice sol como una piña jugosa. Nos encanta ofrecer esta fruta refrescante, una favorita en todas partes, incluyendo nuestro hogar."
+      },
+      "origin": {
+        "en": "Pineapples come from South America originally, but they grow well in many tropical places. Their vibrant flavor is loved worldwide.",
+        "es": "Las piñas provienen originalmente de América del Sur, pero crecen bien en muchos lugares tropicales. Su sabor vibrante es amado en todo el mundo."
+      },
+      "Health Benefits": {
+        "en": "Full of Vitamin C and manganese! Plus, it has bromelain, an enzyme that's good for digestion. A healthy burst of tropical flavor.",
+        "es": "¡Llena de Vitamina C y manganeso! Además, tiene bromelina, una enzima que es buena para la digestión. Una explosión saludable de sabor tropical."
+      },
+      "Best way to eat": {
+        "en": "Delicious fresh and chilled! Slice it up for a snack, add it to fruit salads, or blend it into a refreshing 'agua fresca de piña'.",
+        "es": "¡Deliciosa fresca y fría! Córtala para un snack, añádela a ensaladas de frutas o licúala en una refrescante 'agua fresca de piña'."
+      }
+    },
+    {
+      "id": "plantain",
+      "name": {
+        "en": "Plantain",
+        "es": "Plátano"
+      },
+      "description": {
+        "en": "A true staple in Salvadoran kitchens! Plantains ('plátanos') are incredibly versatile. We use them green for savory 'tostones' or let them ripen until sweet and black for delicious fried 'maduros'.",
+        "es": "¡Un verdadero básico en las cocinas salvadoreñas! Los plátanos son increíblemente versátiles. Los usamos verdes para 'tostones' salados o los dejamos madurar hasta que estén dulces y negros para deliciosos 'maduros' fritos."
+      },
+      "origin": {
+        "en": "Though not native, plantains became essential in El Salvador and across Latin America. Fried plantains, sweet or savory, are a classic side dish for almost any meal.",
+        "es": "Aunque no son nativos, los plátanos se volvieron esenciales en El Salvador y en toda América Latina. Los plátanos fritos, dulces o salados, son un acompañamiento clásico para casi cualquier comida."
+      },
+      "Health Benefits": {
+        "en": "Gives you good energy from complex carbs, plus potassium and vitamins. How you cook them matters, but they're always satisfying!",
+        "es": "¡Te dan buena energía de los carbohidratos complejos, además de potasio y vitaminas. Cómo los cocinas importa, pero siempre son satisfactorios!"
+      },
+      "Best way to eat": {
+        "en": "Cook them! Fry green ones twice for 'tostones'. Fry ripe, sweet ones ('maduros') until caramelized – perfect with beans and crema! Also great boiled in soups.",
+        "es": "¡Cocínalos! Fríe los verdes dos veces para 'tostones'. Fríe los maduros y dulces ('maduros') hasta que estén caramelizados – ¡perfectos con frijoles y crema! También geniales hervidos en sopas."
+      }
+    },
+    {
+      "id": "quesadilla",
+      "name": {
+        "en": "Quesadilla",
+        "es": "Quesadilla"
+      },
+      "description": {
+        "en": "Warm, melty cheese in a tortilla – a simple comfort food we enjoy often! While famous in Mexico, a simple cheese quesadilla is a quick snack or meal loved in Salvadoran homes too.",
+        "es": "Queso caliente y derretido en una tortilla – ¡una comida reconfortante simple que disfrutamos a menudo! Aunque famosa en México, una simple quesadilla de queso es un snack rápido o una comida amada también en los hogares salvadoreños."
+      },
+      "origin": {
+        "en": "This cheesy delight comes from Mexico, combining tortillas and cheese. It's a universally loved concept, easy to make and always satisfying.",
+        "es": "Esta delicia quesosa viene de México, combinando tortillas y queso. Es un concepto universalmente amado, fácil de hacer y siempre satisfactorio."
+      },
+      "Health Benefits": {
+        "en": "Calcium and protein from the cheese, carbs from the tortilla. Add some beans or veggies inside for extra goodness!",
+        "es": "Calcio y proteínas del queso, carbohidratos de la tortilla. ¡Añade algunos frijoles o verduras dentro para bondad extra!"
+      },
+      "Best way to eat": {
+        "en": "Serve hot off the griddle, cut into wedges. Great with a side of salsa or some Salvadoran 'curtido'.",
+        "es": "Sirve caliente recién salida de la plancha, cortada en triángulos. Genial con un acompañamiento de salsa o un poco de 'curtido' salvadoreño."
+      }
+    },
+    {
+      "id": "porous_cheese",
+      "name": {
+        "en": "Porous Cheese",
+        "es": "Queso poroso"
+      },
+      "description": {
+        "en": "This is that fresh, slightly spongy, salty white cheese we love in El Salvador! 'Queso Poroso' has a unique texture perfect for crumbling over beans, pupusas, or salads. It doesn't melt easily, adding texture and salty flavor.",
+        "es": "¡Este es ese queso blanco fresco, ligeramente esponjoso y salado que amamos en El Salvador! El 'Queso Poroso' tiene una textura única perfecta para desmoronar sobre frijoles, pupusas o ensaladas. No se derrite fácilmente, añadiendo textura y sabor salado."
+      },
+      "origin": {
+        "en": "This style of fresh cheese is a staple in Salvadoran cuisine, made by local artisans. Its 'porous' quality is characteristic of the cheesemaking traditions there.",
+        "es": "Este estilo de queso fresco es un básico en la cocina salvadoreña, hecho por artesanos locales. Su cualidad 'porosa' es característica de las tradiciones queseras de allí."
+      },
+      "Health Benefits": {
+        "en": "Gives you calcium and protein. A flavorful way to add dairy to your meals, Salvadoran style.",
+        "es": "Te da calcio y proteínas. Una forma sabrosa de añadir lácteos a tus comidas, al estilo salvadoreño."
+      },
+      "Best way to eat": {
+        "en": "Crumble it! Sprinkle generously over your favorite Salvadoran dishes like pupusas, 'casamiento' (rice and beans), or even just on warm tortillas.",
+        "es": "¡Desmorónalo! Espolvorea generosamente sobre tus platos salvadoreños favoritos como pupusas, 'casamiento' (arroz y frijoles), o incluso simplemente sobre tortillas calientes."
+      }
+    },
+    {
+      "id": "watermelon",
+      "name": {
+        "en": "Watermelon",
+        "es": "Sandía"
+      },
+      "description": {
+        "en": "The ultimate thirst quencher on a sunny day! Big slices of juicy, sweet watermelon always bring smiles. A simple, perfect fruit loved by everyone.",
+        "es": "¡El calmante de sed definitivo en un día soleado! Grandes rebanadas de sandía jugosa y dulce siempre traen sonrisas. Una fruta simple y perfecta amada por todos."
+      },
+      "origin": {
+        "en": "Watermelons traveled from Africa to become a favorite worldwide, especially in hot climates like El Salvador's. It's pure refreshment.",
+        "es": "Las sandías viajaron desde África para convertirse en favoritas en todo el mundo, especialmente en climas cálidos como el de El Salvador. Es pura frescura."
+      },
+      "Health Benefits": {
+        "en": "Mostly water, so it's incredibly hydrating! Plus Vitamins C and A, and lycopene (the stuff that makes it red and is good for you).",
+        "es": "Principalmente agua, ¡así que es increíblemente hidratante! Además de Vitaminas C y A, y licopeno (lo que la hace roja y es bueno para ti)."
+      },
+      "Best way to eat": {
+        "en": "Cold slices are the best! Perfect for picnics, snacks, or blended into a super refreshing 'agua fresca de sandía'.",
+        "es": "¡Las rebanadas frías son lo mejor! Perfectas para picnics, snacks, o licuadas en una súper refrescante 'agua fresca de sandía'."
+      }
+    },
+    {
+      "id": "cashew_seed",
+      "name": {
+        "en": "Cashew Seed",
+        "es": "Semilla de marañón"
+      },
+      "description": {
+        "en": "Creamy, crunchy goodness! These kidney-shaped 'seeds' (we call them nuts!) are roasted to perfection. The cashew fruit ('marañón') itself is also eaten in El Salvador, often in juice.",
+        "es": "¡Bondad cremosa y crujiente! Estas 'semillas' en forma de riñón (¡las llamamos nueces!) están tostadas a la perfección. La fruta del marañón en sí también se come en El Salvador, a menudo en jugo."
+      },
+      "origin": {
+        "en": "Cashew trees were brought from Brazil and now grow in tropical places like El Salvador. The roasted seed is popular worldwide, but the fruit is a special local treat.",
+        "es": "Los árboles de marañón fueron traídos de Brasil y ahora crecen en lugares tropicales como El Salvador. La semilla tostada es popular en todo el mundo, pero la fruta es un capricho local especial."
+      },
+      "Health Benefits": {
+        "en": "Full of healthy fats, protein, and important minerals like copper and magnesium. Great for energy and overall health.",
+        "es": "Lleno de grasas saludables, proteínas y minerales importantes como cobre y magnesio. Genial para la energía y la salud en general."
+      },
+      "Best way to eat": {
+        "en": "Enjoy them roasted as a snack! Also great chopped in salads or added to savory dishes for crunch and richness.",
+        "es": "¡Disfrútalos tostados como snack! También geniales picados en ensaladas o añadidos a platos salados para darles crujiente y riqueza."
+      }
+    },
+    {
+      "id": "plantain_chips",
+      "name": {
+        "en": "Plantain Chips",
+        "es": "Tostadas de plátano"
+      },
+      "description": {
+        "en": "Crispy, salty, and so addictive! These remind us of the village fairs ('ferias') back in El Salvador – you'd always find someone selling fresh 'platanitos fritos'. Thinly sliced green plantains fried just right.",
+        "es": "¡Crujientes, saladas y tan adictivas! Nos recuerdan a las ferias de los pueblos en El Salvador – siempre encontrabas a alguien vendiendo 'platanitos fritos' frescos. Plátanos verdes finamente rebanados y fritos en su punto."
+      },
+      "origin": {
+        "en": "Fried plantain snacks are beloved across Latin America. These crispy chips are a convenient way to enjoy that savory crunch anytime, anywhere.",
+        "es": "Los snacks de plátano frito son queridos en toda América Latina. Estas crujientes tostadas son una forma conveniente de disfrutar de ese crujido salado en cualquier momento y lugar."
+      },
+      "Health Benefits": {
+        "en": "They give you carbs for energy! Frying adds fat, so they are best enjoyed as a fun, crunchy snack.",
+        "es": "¡Te dan carbohidratos para energía! La fritura añade grasa, así que se disfrutan mejor como un snack divertido y crujiente."
+      },
+      "Best way to eat": {
+        "en": "Perfect straight from the bag! We also love using them to scoop up dips like guacamole or bean dip ('frijoles molidos').",
+        "es": "¡Perfectas directamente de la bolsa! También nos encanta usarlas para mojar en dips como guacamole o dip de frijoles ('frijoles molidos')."
+      }
+    },
+    {
+      "id": "fried_cassava_with_mini_anchovies",
+      "name": {
+        "en": "Fried Cassava with Mini Anchovies",
+        "es": "Yuca con pescaditas"
+      },
+      "description": {
+        "en": "A true Salvadoran street food experience! Soft chunks of yuca (cassava) paired with tiny, crispy fried fish ('pescaditas'). It's a classic combo, often served with tangy 'curtido' slaw, just like you'd get from a cart back home.",
+        "es": "¡Una verdadera experiencia de comida callejera salvadoreña! Trozos suaves de yuca combinados con pescaditos diminutos y crujientes ('pescaditas'). Es un combo clásico, a menudo servido con 'curtido' ácido, tal como lo conseguirías en un carrito en casa."
+      },
+      "origin": {
+        "en": "This dish is pure El Salvador! Combining hearty yuca with the savory crunch of fried fish is a staple, especially popular at roadside stands and markets.",
+        "es": "¡Este plato es puro El Salvador! Combinar la sustanciosa yuca con el crujiente salado del pescado frito es un básico, especialmente popular en puestos de carretera y mercados."
+      },
+      "Health Benefits": {
+        "en": "Yuca gives you energy-rich carbs. The little fish provide protein. It's a satisfying street food meal!",
+        "es": "La yuca te da carbohidratos ricos en energía. Los pescaditos proporcionan proteínas. ¡Es una comida callejera satisfactoria!"
+      },
+      "Best way to eat": {
+        "en": "Hot and fresh! Make sure to get a bit of yuca, a few 'pescaditas', and some 'curtido' in each bite for the full experience. A drizzle of tomato sauce is common too.",
+        "es": "¡Caliente y fresco! Asegúrate de obtener un poco de yuca, unas pocas 'pescaditas' y algo de 'curtido' en cada bocado para la experiencia completa. Un chorrito de salsa de tomate también es común."
+      }
+    },
+    {
+      "id": "sapote",
+      "name": {
+        "en": "Sapote",
+        "es": "Zapote"
+      },
+      "description": {
+        "en": "A unique tropical fruit experience! Zapotes come in different types, but they usually have soft, sweet, creamy flesh inside. The flavor is distinct, sometimes like sweet potato or pumpkin pie. A special treat!",
+        "es": "¡Una experiencia única de fruta tropical! Los Zapotes vienen en diferentes tipos, pero generalmente tienen una pulpa suave, dulce y cremosa por dentro. El sabor es distintivo, a veces como batata o pastel de calabaza. ¡Un capricho especial!"
+      },
+      "origin": {
+        "en": "These fruits grow in the tropical parts of the Americas, including El Salvador. Each type (Mamey, Black, White) has its own season and devoted fans.",
+        "es": "Estas frutas crecen en las partes tropicales de las Américas, incluyendo El Salvador. Cada tipo (Mamey, Negro, Blanco) tiene su propia temporada y fanáticos devotos."
+      },
+      "Health Benefits": {
+        "en": "Generally offer good vitamins (like C and A) and fiber. They are a naturally sweet way to get nutrients.",
+        "es": "Generalmente ofrecen buenas vitaminas (como C y A) y fibra. Son una forma naturalmente dulce de obtener nutrientes."
+      },
+      "Best way to eat": {
+        "en": "Eat the flesh fresh when it's soft and ripe (avoid skin and seeds). Also fantastic blended into smoothies ('licuados') or made into ice cream or mousse for a creamy dessert.",
+        "es": "Come la pulpa fresca cuando esté suave y madura (evita la piel y las semillas). También fantástica licuada en batidos ('licuados') o hecha helado o mousse para un postre cremoso."
+      }
+    }
+  ]

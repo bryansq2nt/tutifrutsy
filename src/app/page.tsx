@@ -38,7 +38,7 @@ export default function Home() {
           </p>
           
           <Link 
-            href="/products" 
+            href="/items" 
             className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold rounded-full text-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             {language === 'en' ? 'Our Products' : 'Nuestros Productos'}
