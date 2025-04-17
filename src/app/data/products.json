@@ -5,7 +5,7 @@
         "es": "Semilla de Marañón",
         "en": "Cashew Seed"
       },
-      "route_id": "semilla_maranon",
+      "route_id": "marano_seeds",
       "description": {
         "es": "¡El snack dorado que todos deberían probar! Estas semillas de marañón tostadas artesanalmente tienen una textura crujiente por fuera y mantecosa por dentro, con un sabor profundo, ligeramente dulce y terroso que se intensifica con el tueste perfecto. Un tesoro nutricional envuelto en sabor.",
         "en": "The golden snack everyone should try! These artisanally roasted cashew seeds have a crunchy texture on the outside and buttery on the inside, with a deep, slightly sweet and earthy flavor that intensifies with the perfect roast. A nutritional treasure wrapped in flavor."
@@ -26,10 +26,6 @@
         "es": "\"Estas semillas tienen ese sabor auténtico que recuerdo de mi infancia. El tueste es perfecto y conservan toda la esencia salvadoreña.\" - Fernando de Santa Tecla",
         "en": "\"These seeds have that authentic flavor I remember from my childhood. The roast is perfect and they preserve all the Salvadoran essence.\" - Fernando from Santa Tecla"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": false,
       "sustainable": {
         "es": "Apoyamos a pequeños productores locales que mantienen prácticas agrícolas tradicionales y sostenibles",
@@ -62,10 +58,6 @@
         "es": "\"Estas tostadas me transportan directamente a mi infancia. El equilibrio perfecto entre dulce y crujiente, ¡exactamente como las hacía mi madre!\" - Lucía de La Libertad",
         "en": "\"These chips transport me directly to my childhood. The perfect balance between sweet and crunchy, exactly as my mother used to make them!\" - Lucia from La Libertad"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": false,
       "preparation_note": {
         "es": "Fritas en pequeños lotes para garantizar frescura y máximo sabor",
@@ -99,10 +91,6 @@
         "es": "\"Estas pescaditas de yuca tienen exactamente el sabor que recuerdo de mi infancia en El Salvador. La combinación de la yuca crujiente con el relleno cremoso es insuperable.\" - Daniel de San Salvador",
         "en": "\"These yuca fish have exactly the flavor I remember from my childhood in El Salvador. The combination of crispy yuca with the creamy filling is unbeatable.\" - Daniel from San Salvador"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": false,
       "preparation_note": {
         "es": "Preparadas diariamente siguiendo recetas familiares tradicionales",
@@ -136,10 +124,6 @@
         "es": "\"El sabor del zapote me conecta directamente con mis raíces salvadoreñas. Esta fruta es imposible de encontrar con esta calidad en otros lugares.\" - María de Usulután",
         "en": "\"The flavor of sapote connects me directly with my Salvadoran roots. This fruit is impossible to find with this quality elsewhere.\" - Maria from Usulután"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": true,
       "season": {
         "es": "Disponible principalmente de junio a septiembre, ¡no te lo pierdas!",
@@ -176,10 +160,6 @@
         "es": "\"Este mil hojas es una obra de arte. Cada capa es perfecta y el dulce de leche tiene el punto exacto de dulzor que recuerdo de las pastelerías de mi infancia.\" - Héctor de San Salvador",
         "en": "\"This thousand layer pastry is a work of art. Each layer is perfect and the dulce de leche has the exact point of sweetness that I remember from the pastry shops of my childhood.\" - Héctor from San Salvador"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": false,
       "chef_favorite": {
         "es": "Preparado por nuestro maestro pastelero con más de 30 años de experiencia",
@@ -212,10 +192,6 @@
         "es": "\"El aroma de esta semita me hace cerrar los ojos y volver a la cocina de mi madre. La combinación de la canela con la piña es exactamente como la recuerdo.\" - Patricia de Chalatenango",
         "en": "\"The aroma of this semita makes me close my eyes and return to my mother's kitchen. The combination of cinnamon with pineapple is exactly as I remember it.\" - Patricia from Chalatenango"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": false,
       "preparation_note": {
         "es": "Preparado artesanalmente siguiendo recetas familiares de tres generaciones",
@@ -249,10 +225,6 @@
         "es": "\"Cada mordida de este pan torta me lleva directamente a las mañanas de domingo en casa de mis abuelos. El sabor auténtico de El Salvador.\" - Alberto de San Vicente",
         "en": "\"Each bite of this cake bread takes me directly to Sunday mornings at my grandparents' house. The authentic flavor of El Salvador.\" - Alberto from San Vicente"
       },
-      "images": [
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
-      ],
       "seasonal": false
     }
   ]

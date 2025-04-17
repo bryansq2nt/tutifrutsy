@@ -1,35 +1,44 @@
 import { notFound } from 'next/navigation'
-import ProductContentV2 from './ProductContentV2'
-import { Product } from '@/app/data/products-v2'
+import ProductContent from './ProductContent'
+import { Product } from '@/app/data/products'
+import fs from 'fs'
+import path from 'path'
 
-interface PageProps {
-  params: {
-    product: string
-  }
+export async function generateStaticParams() {
+  const productsData = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), 'src/app/data/products.json'), 'utf-8')
+  ).products
+
+  return productsData.map((product: Product) => ({
+    product: product.route_id,
+  }))
 }
 
 async function getProduct(id: string): Promise<Product | null> {
   try {
-    // Use absolute URL with origin
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
-    const response = await fetch(`${baseUrl}/api/products/${id}`, {
-      cache: 'no-store'
-    })
+    const productsData = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), 'src/app/data/products.json'), 'utf-8')
+    ).products
+
+    const product = productsData.find((p: Product) => p.route_id === id)
     
-    if (!response.ok) {
+    if (!product) {
       return null
     }
     
-    return await response.json()
+    return product
   } catch (error) {
     console.error('Error fetching product:', error)
     return null
   }
 }
 
-export default async function ProductPage({ params }: PageProps) {
-  // In Next.js App Router, params is already resolved
-  const productId = params.product
+interface PageProps {
+  params: Promise<{ product: string }>
+}
+
+export default async function ProductPage(props: PageProps) {
+  const { product: productId } = await props.params
   const product = await getProduct(productId)
 
   if (!product) {
@@ -38,10 +47,9 @@ export default async function ProductPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-50">
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <ProductContentV2 product={product} />
+        <ProductContent product={product} />
       </div>
     </div>
   )
-} 
+}

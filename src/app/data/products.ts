@@ -24,19 +24,33 @@ export interface Product {
     es: string
     en: string
   }
-  images: string[]
+  images?: string[] // Made optional with ?
   seasonal?: boolean
+  season?: {
+    es: string
+    en: string
+  }
   sustainable?: {
+    es: string
+    en: string
+  }
+  preparation_note?: {
+    es: string
+    en: string
+  }
+  chef_favorite?: {
     es: string
     en: string
   }
   pairs_well_with?: string[]
 }
 
+// Import the JSON data directly
+import productsData from './products.json'
+
 export async function getProduct(id: string): Promise<Product | null> {
   try {
-    const products = await getAllProducts()
-    return products.find(product => product.route_id === id) || null
+    return productsData.products.find((product) => product.route_id === id) as Product | null
   } catch (error) {
     console.error('Error getting product:', error)
     return null
@@ -45,19 +59,9 @@ export async function getProduct(id: string): Promise<Product | null> {
 
 export async function getAllProducts(): Promise<Product[]> {
   try {
-    // Use absolute URL with origin
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
-    const response = await fetch(`${baseUrl}/api/products`, {
-      cache: 'no-store'
-    })
-    
-    if (!response.ok) {
-      throw new Error('Failed to fetch products')
-    }
-    
-    return await response.json()
+    return productsData.products as Product[]
   } catch (error) {
     console.error('Error fetching products:', error)
     return []
   }
-} 
+}

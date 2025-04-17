@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import ClientLanguageSwitcher from './components/ClientLanguageSwitcher'
 import { useLanguage } from './context/LanguageContext'
 
@@ -18,9 +19,11 @@ export default function Home() {
       <main className="flex-grow flex flex-col items-center justify-center p-8 text-center">
         <div className="max-w-3xl">
           <div className="mb-8">
-            <img 
+            <Image 
               src="/images/Logo.png" 
               alt="Tutifrutsy Logo" 
+              width={256}
+              height={256}
               className="h-48 md:h-64 w-auto mx-auto"
             />
           </div>

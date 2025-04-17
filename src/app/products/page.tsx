@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { getAllProducts, Product } from '../data/products-v2'
+import { getAllProducts, Product } from '../data/products'
 import ClientLanguageSwitcher from '../components/ClientLanguageSwitcher'
 import { useLanguage } from '../context/LanguageContext'
 import { useEffect, useState } from 'react'
@@ -11,15 +11,6 @@ export default function ProductsPage() {
   const { language } = useLanguage()
   const [products, setProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
-
-  // Default image path
-  const defaultImage = '/images/default-image.png'
-
-  // Function to get image path with fallback
-  const getImagePath = (imagePath: string | undefined) => {
-    if (!imagePath) return defaultImage
-    return imagePath.startsWith('/') ? imagePath : `/${imagePath}`
-  }
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -60,9 +51,11 @@ export default function ProductsPage() {
         <main className="container mx-auto px-4 py-8">
           <div className="text-center mb-12">
             <div className="mb-8">
-              <img 
+              <Image 
                 src="/images/Logo.png" 
                 alt="Tutifrutsy Logo" 
+                width={256}
+                height={256}
                 className="h-48 md:h-64 w-auto mx-auto"
               />
             </div>
