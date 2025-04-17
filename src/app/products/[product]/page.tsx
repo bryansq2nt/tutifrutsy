@@ -1,58 +1,46 @@
-import Link from 'next/link'
-import products from '../../data/products.json'
-import ProductContent from './ProductContent'
-import { use } from 'react'
+import { notFound } from 'next/navigation'
+import ProductContentV2 from './ProductContentV2'
+import { Product } from '@/app/data/products-v2'
 
-type Product = {
-  name: {
-    es: string
-    en: string
-  }
-  route_id: string
-  description: {
-    es: string
-    en: string
-  }
-  origin: {
-    es: string
-    en: string
-  }
-  health_benefits: {
-    es: string
-    en: string
-  }
-  images: string[]
-}
-
-// Updated PageProps type to match Next.js 15 requirements
-type PageProps = {
-  params: Promise<{
+interface PageProps {
+  params: {
     product: string
-  }>
+  }
 }
 
-export default function ProductPage({ params }: PageProps) {
-  // Unwrap the params Promise using React.use()
-  const unwrappedParams = use(params)
-  const productId = unwrappedParams.product
-  
-  // Find the product using the unwrapped product ID
-  const product = products.products.find((p: Product) => p.route_id === productId)
+async function getProduct(id: string): Promise<Product | null> {
+  try {
+    // Use absolute URL with origin
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+    const response = await fetch(`${baseUrl}/api/products/${id}`, {
+      cache: 'no-store'
+    })
+    
+    if (!response.ok) {
+      return null
+    }
+    
+    return await response.json()
+  } catch (error) {
+    console.error('Error fetching product:', error)
+    return null
+  }
+}
+
+export default async function ProductPage({ params }: PageProps) {
+  // In Next.js App Router, params is already resolved
+  const productId = params.product
+  const product = await getProduct(productId)
 
   if (!product) {
-    // Redirect to products page if product not found
-    return <div>Product not found</div>
+    notFound()
   }
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-50">
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="mb-8">
-          <Link href="/products" className="text-blue-400 hover:text-blue-300">
-            ← Back to Products
-          </Link>
-        </div>
-        <ProductContent product={product} />
+        <ProductContentV2 product={product} />
       </div>
     </div>
   )

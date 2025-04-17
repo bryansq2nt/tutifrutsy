@@ -1,0 +1,259 @@
+{
+  "products": [
+    {
+      "name": {
+        "es": "Semilla de Marañón",
+        "en": "Cashew Seed"
+      },
+      "route_id": "semilla_maranon",
+      "description": {
+        "es": "¡El snack dorado que todos deberían probar! Estas semillas de marañón tostadas artesanalmente tienen una textura crujiente por fuera y mantecosa por dentro, con un sabor profundo, ligeramente dulce y terroso que se intensifica con el tueste perfecto. Un tesoro nutricional envuelto en sabor.",
+        "en": "The golden snack everyone should try! These artisanally roasted cashew seeds have a crunchy texture on the outside and buttery on the inside, with a deep, slightly sweet and earthy flavor that intensifies with the perfect roast. A nutritional treasure wrapped in flavor."
+      },
+      "origin": {
+        "es": "Cultivadas y procesadas en El Salvador, donde el clima tropical crea condiciones ideales para estos árboles. Cada semilla es extraída cuidadosamente a mano del fruto del marañón, siguiendo técnicas tradicionales que preservan su sabor y propiedades nutricionales.",
+        "en": "Grown and processed in El Salvador, where the tropical climate creates ideal conditions for these trees. Each seed is carefully extracted by hand from the cashew fruit, following traditional techniques that preserve its flavor and nutritional properties."
+      },
+      "health_benefits": {
+        "es": "Altas en grasas saludables monoinsaturadas que apoyan la salud cardiovascular. Ricas en magnesio, fundamental para más de 300 procesos bioquímicos del cuerpo, desde la función muscular hasta la salud ósea. También aportan zinc, hierro y antioxidantes protectores.",
+        "en": "High in healthy monounsaturated fats that support cardiovascular health. Rich in magnesium, essential for more than 300 biochemical processes in the body, from muscle function to bone health. They also provide zinc, iron, and protective antioxidants."
+      },
+      "serving_suggestion": {
+        "es": "Disfrútalas solas como snack nutritivo, añádelas a ensaladas para un toque crujiente, o utilízalas molidas como base para salsas cremosas. Perfectas para aperitivos especiales junto a frutas deshidratadas y quesos locales en una tabla de picoteo salvadoreña.",
+        "en": "Enjoy them alone as a nutritious snack, add them to salads for a crunchy touch, or use them ground as a base for creamy sauces. Perfect for special appetizers alongside dehydrated fruits and local cheeses on a Salvadoran nibbling board."
+      },
+      "customer_quote": {
+        "es": "\"Estas semillas tienen ese sabor auténtico que recuerdo de mi infancia. El tueste es perfecto y conservan toda la esencia salvadoreña.\" - Fernando de Santa Tecla",
+        "en": "\"These seeds have that authentic flavor I remember from my childhood. The roast is perfect and they preserve all the Salvadoran essence.\" - Fernando from Santa Tecla"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": false,
+      "sustainable": {
+        "es": "Apoyamos a pequeños productores locales que mantienen prácticas agrícolas tradicionales y sostenibles",
+        "en": "We support small local producers who maintain traditional and sustainable agricultural practices"
+      }
+    },
+    {
+      "name": {
+        "es": "Tostadas de plátano",
+        "en": "Plantain Chips"
+      },
+      "route_id": "tostadas_platano",
+      "description": {
+        "es": "Rodajas de plátano maduro fritas hasta quedar crujientes, con un sabor que equilibra perfectamente dulzura natural y un toque de sal. Cada bocado ofrece una explosión de sabor tropical y una textura irresistiblemente crujiente que evoca recuerdos de las calles salvadoreñas.",
+        "en": "Slices of ripe plantain fried until crispy, with a flavor that perfectly balances natural sweetness and a touch of salt. Each bite offers an explosion of tropical flavor and an irresistibly crunchy texture that evokes memories of Salvadoran streets."
+      },
+      "origin": {
+        "es": "Snack tradicional salvadoreño preparado siguiendo recetas caseras transmitidas por generaciones. Los plátanos se seleccionan en su punto perfecto de madurez para lograr el equilibrio ideal entre dulzura y firmeza antes de ser transformados en estas delicias crujientes.",
+        "en": "Traditional Salvadoran snack prepared following homemade recipes passed down through generations. Plantains are selected at their perfect point of ripeness to achieve the ideal balance between sweetness and firmness before being transformed into these crunchy delights."
+      },
+      "health_benefits": {
+        "es": "Fuente de energía rápida gracias a sus carbohidratos naturales. Contienen potasio, esencial para la función muscular y nerviosa. Al estar hechas de plátano maduro, conservan fibra, vitaminas y minerales beneficiosos para la salud digestiva.",
+        "en": "Source of quick energy thanks to its natural carbohydrates. They contain potassium, essential for muscle and nerve function. Being made from ripe plantain, they retain fiber, vitamins, and minerals beneficial for digestive health."
+      },
+      "serving_suggestion": {
+        "es": "Disfrútalas solas como snack crujiente o como acompañamiento de platos típicos salvadoreños. Perfectas para dipear en guacamole fresco o crema ácida. Pruébalas con queso rallado encima para una experiencia gastronómica incomparable.",
+        "en": "Enjoy them alone as a crunchy snack or as an accompaniment to typical Salvadoran dishes. Perfect for dipping in fresh guacamole or sour cream. Try them with grated cheese on top for an incomparable gastronomic experience."
+      },
+      "customer_quote": {
+        "es": "\"Estas tostadas me transportan directamente a mi infancia. El equilibrio perfecto entre dulce y crujiente, ¡exactamente como las hacía mi madre!\" - Lucía de La Libertad",
+        "en": "\"These chips transport me directly to my childhood. The perfect balance between sweet and crunchy, exactly as my mother used to make them!\" - Lucia from La Libertad"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": false,
+      "preparation_note": {
+        "es": "Fritas en pequeños lotes para garantizar frescura y máximo sabor",
+        "en": "Fried in small batches to ensure freshness and maximum flavor"
+      },
+      "pairs_with": ["curtido", "queso_porozo", "guacamole"]
+    },
+    {
+      "name": {
+        "es": "Yuca pescaditas",
+        "en": "Yuca Fish"
+      },
+      "route_id": "yuca_pescaditas",
+      "description": {
+        "es": "Delicioso bocadillo salvadoreño hecho de masa de yuca frita rellena de frijoles sazonados. Su forma única de pequeños peces hace sonreír, mientras que el contraste entre la cobertura crujiente de yuca y el relleno cremoso de frijoles crea una explosión de texturas y sabores tradicionales.",
+        "en": "Delicious Salvadoran snack made of fried yuca dough filled with seasoned beans. Its unique shape of small fish makes you smile, while the contrast between the crispy yuca coating and the creamy bean filling creates an explosion of traditional textures and flavors."
+      },
+      "origin": {
+        "es": "Antojito tradicional nacido de la creatividad culinaria salvadoreña que transforma ingredientes básicos en manjares deliciosos. Su nombre y forma de pez reflejan la conexión cultural con la pesca, importante medio de subsistencia en las costas salvadoreñas.",
+        "en": "Traditional snack born from Salvadoran culinary creativity that transforms basic ingredients into delicious delicacies. Its name and fish shape reflect the cultural connection with fishing, an important means of subsistence on the Salvadoran coasts."
+      },
+      "health_benefits": {
+        "es": "La yuca es una buena fuente de carbohidratos complejos y fibra resistente que alimenta la microbiota intestinal. Los frijoles aportan proteínas vegetales de alta calidad, fibra y hierro, nutrientes esenciales para la salud general.",
+        "en": "Yuca is a good source of complex carbohydrates and resistant fiber that feeds gut microbiota. Beans provide high-quality plant proteins, fiber, and iron, essential nutrients for overall health."
+      },
+      "serving_suggestion": {
+        "es": "Disfrútalas calientes como aperitivo o merienda, acompañadas de curtido salvadoreño y salsa roja casera para una explosión de sabores auténticos. Perfectas para compartir en reuniones familiares o como plato de entrada en una cena tradicional.",
+        "en": "Enjoy them hot as an appetizer or snack, accompanied by Salvadoran curtido and homemade red sauce for an explosion of authentic flavors. Perfect for sharing at family gatherings or as an starter in a traditional dinner."
+      },
+      "customer_quote": {
+        "es": "\"Estas pescaditas de yuca tienen exactamente el sabor que recuerdo de mi infancia en El Salvador. La combinación de la yuca crujiente con el relleno cremoso es insuperable.\" - Daniel de San Salvador",
+        "en": "\"These yuca fish have exactly the flavor I remember from my childhood in El Salvador. The combination of crispy yuca with the creamy filling is unbeatable.\" - Daniel from San Salvador"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": false,
+      "preparation_note": {
+        "es": "Preparadas diariamente siguiendo recetas familiares tradicionales",
+        "en": "Prepared daily following traditional family recipes"
+      },
+      "pairs_with": ["curtido", "salsa_roja"]
+    },
+    {
+      "name": {
+        "es": "Zapote",
+        "en": "Sapote"
+      },
+      "route_id": "zapote",
+      "description": {
+        "es": "Fruta tropical de pulpa suave, dulce y anaranjada con un sabor único que recuerda al caramelo natural mezclado con notas de albaricoque, calabaza y almendra. Su textura aterciopelada y cremosa se deshace en la boca, creando una experiencia sensorial inolvidable.",
+        "en": "Tropical fruit with soft, sweet, and orange pulp with a unique flavor reminiscent of natural caramel mixed with notes of apricot, pumpkin, and almond. Its velvety and creamy texture melts in the mouth, creating an unforgettable sensory experience."
+      },
+      "origin": {
+        "es": "Fruto nativo de Mesoamérica cultivado en regiones específicas de El Salvador, donde el suelo y clima crean condiciones perfectas para zapotes excepcionalmente dulces y aromáticos. Cada fruta es cosechada a mano cuando alcanza su madurez óptima.",
+        "en": "Native fruit of Mesoamerica grown in specific regions of El Salvador, where soil and climate create perfect conditions for exceptionally sweet and aromatic sapotes. Each fruit is harvested by hand when it reaches its optimal ripeness."
+      },
+      "health_benefits": {
+        "es": "Rico en vitaminas A y C, antioxidantes que combaten el envejecimiento celular y refuerzan el sistema inmunológico. Su alto contenido de hierro ayuda a prevenir anemias, mientras que su fibra soluble favorece la salud digestiva y cardiovascular.",
+        "en": "Rich in vitamins A and C, antioxidants that combat cellular aging and strengthen the immune system. Its high iron content helps prevent anemias, while its soluble fiber promotes digestive and cardiovascular health."
+      },
+      "serving_suggestion": {
+        "es": "Disfrútalo fresco cuando está perfectamente maduro, simplemente abierto por la mitad y comido con cuchara. Excelente en batidos tropicales, helados artesanales o como relleno de repostería tradicional. Combina perfectamente con un toque de limón para realzar su dulzura.",
+        "en": "Enjoy it fresh when perfectly ripe, simply cut in half and eaten with a spoon. Excellent in tropical smoothies, artisanal ice creams, or as a filling for traditional pastries. Perfectly combines with a touch of lime to enhance its sweetness."
+      },
+      "customer_quote": {
+        "es": "\"El sabor del zapote me conecta directamente con mis raíces salvadoreñas. Esta fruta es imposible de encontrar con esta calidad en otros lugares.\" - María de Usulután",
+        "en": "\"The flavor of sapote connects me directly with my Salvadoran roots. This fruit is impossible to find with this quality elsewhere.\" - Maria from Usulután"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": true,
+      "season": {
+        "es": "Disponible principalmente de junio a septiembre, ¡no te lo pierdas!",
+        "en": "Mainly available from June to September, don't miss it!"
+      },
+      "culinary_history": {
+        "es": "Fruta venerada desde tiempos precolombinos por culturas mesoamericanas",
+        "en": "Fruit revered since pre-Columbian times by Mesoamerican cultures"
+      }
+    },
+    {
+      "name": {
+        "es": "Pan mil hojas",
+        "en": "Thousand Layer Pastry"
+      },
+      "route_id": "pan_mil_hojas",
+      "description": {
+        "es": "Delicado postre de múltiples capas de hojaldre crujiente alternadas con cremoso dulce de leche o crema pastelera. Cada bocado es una experiencia sensorial donde contrastan texturas y sabores: la fragilidad del hojaldre con la suavidad del relleno, creando una sinfonía de sabor.",
+        "en": "Delicate dessert with multiple layers of crispy puff pastry alternated with creamy dulce de leche or pastry cream. Each bite is a sensory experience where textures and flavors contrast: the fragility of the puff pastry with the smoothness of the filling, creating a symphony of flavor."
+      },
+      "origin": {
+        "es": "Inspirado en la tradicional milhojas europea pero adaptado al paladar salvadoreño con rellenos locales como dulce de leche. Cada pastelero guarda celosamente su propia técnica para lograr las capas perfectas que le dan nombre a este postre.",
+        "en": "Inspired by the traditional European millefeuille but adapted to the Salvadoran palate with local fillings such as dulce de leche. Each pastry chef jealously guards their own technique to achieve the perfect layers that give this dessert its name."
+      },
+      "health_benefits": {
+        "es": "Elaborado con ingredientes naturales de alta calidad. La versión con dulce de leche aporta calcio y proteínas lácteas, mientras que las versiones con frutas incorporan vitaminas y antioxidantes.",
+        "en": "Made with high-quality natural ingredients. The version with dulce de leche provides calcium and dairy proteins, while versions with fruits incorporate vitamins and antioxidants."
+      },
+      "serving_suggestion": {
+        "es": "Sírvelo frío para apreciar el contraste de texturas al máximo. Acompáñalo con café espresso para equilibrar su dulzura, o con una copa de vino dulce para ocasiones especiales. Corta con un cuchillo de sierra para preservar las delicadas capas.",
+        "en": "Serve it cold to appreciate the contrast of textures to the maximum. Accompany it with espresso coffee to balance its sweetness, or with a glass of sweet wine for special occasions. Cut with a serrated knife to preserve the delicate layers."
+      },
+      "customer_quote": {
+        "es": "\"Este mil hojas es una obra de arte. Cada capa es perfecta y el dulce de leche tiene el punto exacto de dulzor que recuerdo de las pastelerías de mi infancia.\" - Héctor de San Salvador",
+        "en": "\"This thousand layer pastry is a work of art. Each layer is perfect and the dulce de leche has the exact point of sweetness that I remember from the pastry shops of my childhood.\" - Héctor from San Salvador"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": false,
+      "chef_favorite": {
+        "es": "Preparado por nuestro maestro pastelero con más de 30 años de experiencia",
+        "en": "Prepared by our master pastry chef with more than 30 years of experience"
+      }
+    },
+    {
+      "name": {
+        "es": "Pan semita",
+        "en": "Semita Bread"
+      },
+      "route_id": "pan_semita",
+      "description": {
+        "es": "Pan dulce tradicional salvadoreño con capas crujientes y un delicioso relleno de mermelada de piña o guayaba. Su aroma a canela y clavo perfuma el ambiente, mientras que el contraste entre la masa caramelizada y el relleno frutal crea una experiencia nostálgica inolvidable.",
+        "en": "Traditional Salvadoran sweet bread with crispy layers and a delicious pineapple or guava jam filling. Its cinnamon and clove aroma perfumes the environment, while the contrast between the caramelized dough and the fruity filling creates an unforgettable nostalgic experience."
+      },
+      "origin": {
+        "es": "Receta que se remonta a la época colonial, transmitida por generaciones de panaderos salvadoreños. Su nombre deriva del pan 'semítico' traído por inmigrantes árabes y adaptado con ingredientes y sabores locales hasta convertirse en parte fundamental de nuestra identidad culinaria.",
+        "en": "Recipe that dates back to colonial times, transmitted by generations of Salvadoran bakers. Its name derives from the 'Semitic' bread brought by Arab immigrants and adapted with local ingredients and flavors until becoming a fundamental part of our culinary identity."
+      },
+      "health_benefits": {
+        "es": "El relleno de frutas aporta fibra, vitaminas y antioxidantes. Las especias naturales como la canela tienen propiedades antiinflamatorias y reguladoras del azúcar en sangre, mientras que el clavo es conocido por sus beneficios digestivos.",
+        "en": "The fruit filling provides fiber, vitamins, and antioxidants. Natural spices such as cinnamon have anti-inflammatory and blood sugar regulating properties, while clove is known for its digestive benefits."
+      },
+      "serving_suggestion": {
+        "es": "Disfrútalo ligeramente calentado para resaltar su aroma a especias, acompañado de café negro salvadoreño para un contraste perfecto de sabores. Ideal para compartir en reuniones familiares o como merienda especial de fin de semana.",
+        "en": "Enjoy it slightly heated to highlight its spice aroma, accompanied by black Salvadoran coffee for a perfect contrast of flavors. Ideal to share at family gatherings or as a special weekend snack."
+      },
+      "customer_quote": {
+        "es": "\"El aroma de esta semita me hace cerrar los ojos y volver a la cocina de mi madre. La combinación de la canela con la piña es exactamente como la recuerdo.\" - Patricia de Chalatenango",
+        "en": "\"The aroma of this semita makes me close my eyes and return to my mother's kitchen. The combination of cinnamon with pineapple is exactly as I remember it.\" - Patricia from Chalatenango"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": false,
+      "preparation_note": {
+        "es": "Preparado artesanalmente siguiendo recetas familiares de tres generaciones",
+        "en": "Artisanally prepared following family recipes of three generations"
+      },
+      "pairs_with": ["cafe"]
+    },
+    {
+      "name": {
+        "es": "Pan torta",
+        "en": "Cake Bread"
+      },
+      "route_id": "pan_torta",
+      "description": {
+        "es": "Pan dulce esponjoso tipo bizcocho con toques de vainilla y canela. Su miga suave y ligera absorbe perfectamente el café, mientras que su corteza dorada añade un contraste de textura. Un clásico que evoca desayunos familiares y tardes de café con conversación.",
+        "en": "Spongy sweet bread, cake-like with touches of vanilla and cinnamon. Its soft and light crumb perfectly absorbs coffee, while its golden crust adds a texture contrast. A classic that evokes family breakfasts and coffee afternoons with conversation."
+      },
+      "origin": {
+        "es": "Receta tradicional salvadoreña nacida de la fusión entre técnicas españolas de pastelería y el uso de ingredientes locales. A lo largo de generaciones, cada familia ha desarrollado su propia versión, convirtiéndolo en parte fundamental del patrimonio culinario salvadoreño.",
+        "en": "Traditional Salvadoran recipe born from the fusion between Spanish pastry techniques and the use of local ingredients. Over generations, each family has developed its own version, making it a fundamental part of the Salvadoran culinary heritage."
+      },
+      "health_benefits": {
+        "es": "Elaborado con huevos frescos que aportan proteínas completas y vitaminas del grupo B. La canela ayuda a regular el azúcar en sangre, mientras que su bajo contenido de grasas lo hace más ligero que otros postres.",
+        "en": "Made with fresh eggs that provide complete proteins and B vitamins. Cinnamon helps regulate blood sugar, while its low fat content makes it lighter than other desserts."
+      },
+      "serving_suggestion": {
+        "es": "Disfrútalo en rebanadas con un café con leche o chocolate caliente para un desayuno tradicional. También delicioso para acompañar frutas frescas o como base para postres más elaborados como trifles o pudines.",
+        "en": "Enjoy it in slices with a latte or hot chocolate for a traditional breakfast. Also delicious to accompany fresh fruits or as a base for more elaborate desserts such as trifles or pudings."
+      },
+      "customer_quote": {
+        "es": "\"Cada mordida de este pan torta me lleva directamente a las mañanas de domingo en casa de mis abuelos. El sabor auténtico de El Salvador.\" - Alberto de San Vicente",
+        "en": "\"Each bite of this cake bread takes me directly to Sunday mornings at my grandparents' house. The authentic flavor of El Salvador.\" - Alberto from San Vicente"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608571423910-cc5b5a5c3c5c?auto=format&fit=crop&q=80"
+      ],
+      "seasonal": false
+    }
+  ]
+}
