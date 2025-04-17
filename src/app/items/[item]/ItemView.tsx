@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
 import { useLanguage } from '@/app/context/LanguageContext'
 import { Product } from '@/app/data/database'
 import ClientLanguageSwitcher from '@/app/components/ClientLanguageSwitcher'
@@ -13,7 +12,6 @@ interface ProductContentProps {
 }
 
 export default function ItemView({ product }: ProductContentProps) {
-  const router = useRouter()
   const { language } = useLanguage()
   const [activeTab, setActiveTab] = useState('description')
 
