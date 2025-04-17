@@ -59,7 +59,7 @@ export default function ProductsPage() {
       <div className="container mx-auto px-4 py-8 flex-grow">
         <div className="flex justify-center mb-8">
           <Image
-            src="/images/logo.png"
+            src="/images/Logo.png"
             alt="Tutifrutsy Logo"
             width={192}
             height={48}
