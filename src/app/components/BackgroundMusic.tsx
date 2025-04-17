@@ -14,7 +14,7 @@ export default function BackgroundMusic() {
     // Create audio element
     audioRef.current = new Audio('/Music/background-music.mp3')
     audioRef.current.loop = true
-    audioRef.current.volume = 0.3 // Set volume to 50%
+    audioRef.current.volume = 0.1 // Set volume to 50%
     audioRef.current.muted = false // Ensure it's not muted
     
     // Try to autoplay immediately
