@@ -29,7 +29,7 @@ export default function ProductsPage() {
     loadProducts()
   }, [])
 
-  
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -42,21 +42,21 @@ export default function ProductsPage() {
     <div className="min-h-screen p-8 bg-gradient-to-b from-orange-50 via-white to-orange-50">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text hover:from-orange-600 hover:to-red-600"
           >
             Tutifrutsy
           </Link>
           <ClientLanguageSwitcher />
         </div>
-        
+
         <main className="container mx-auto px-4 py-8">
           <div className="text-center mb-12">
             <div className="mb-8">
-              <Image 
-                src="/images/Logo.png" 
-                alt="Tutifrutsy Logo" 
+              <Image
+                src="/images/Logo.png"
+                alt="Tutifrutsy Logo"
                 width={256}
                 height={256}
                 className="h-48 md:h-64 w-auto mx-auto"
@@ -66,11 +66,11 @@ export default function ProductsPage() {
               {language === 'en' ? 'Our Products' : 'Nuestros Productos'}
             </h1>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
-              <Link 
-                href={`/items/${product.id}`} 
+              <Link
+                href={`/items/${product.id}`}
                 key={product.id}
                 className="block group"
               >

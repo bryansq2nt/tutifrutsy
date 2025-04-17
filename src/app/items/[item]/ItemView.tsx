@@ -6,6 +6,7 @@ import { useLanguage } from '@/app/context/LanguageContext'
 import { Product } from '@/app/data/database'
 import ClientLanguageSwitcher from '@/app/components/ClientLanguageSwitcher'
 import { useState } from 'react'
+import Link from 'next/link'
 
 interface ProductContentProps {
   product: Product
@@ -67,8 +68,8 @@ export default function ItemView({ product }: ProductContentProps) {
     <div className="space-y-8">
       {/* Header with Back Button and Language Switch */}
       <div className="flex justify-between items-center">
-        <button
-          onClick={() => router.back()}
+        <Link
+          href="/items"
           className="flex items-center text-orange-600 hover:text-orange-700 transition-colors"
         >
           <svg
@@ -86,7 +87,7 @@ export default function ItemView({ product }: ProductContentProps) {
             />
           </svg>
           {language === 'en' ? 'Back to Products' : 'Volver a Productos'}
-        </button>
+        </Link>
 
         <ClientLanguageSwitcher />
       </div>
