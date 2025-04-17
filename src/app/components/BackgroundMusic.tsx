@@ -12,7 +12,7 @@ export default function BackgroundMusic() {
   // Initialize audio on component mount
   useEffect(() => {
     // Create audio element
-    audioRef.current = new Audio('/music/background-music.mp3')
+    audioRef.current = new Audio('/Music/background-music.mp3')
     audioRef.current.loop = true
     audioRef.current.volume = 0.5 // Set volume to 50%
     audioRef.current.muted = false // Ensure it's not muted
