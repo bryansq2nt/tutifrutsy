@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import ClientLanguageSwitcher from './components/ClientLanguageSwitcher'
 import { useLanguage } from './context/LanguageContext'
 
 export default function Home() {
@@ -10,11 +9,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-orange-50 to-white">
-      {/* Header with language switcher */}
-      <header className="p-4 flex justify-end">
-        <ClientLanguageSwitcher />
-      </header>
-
       {/* Main content */}
       <main className="flex-grow flex flex-col items-center justify-center p-8 text-center">
         <div className="max-w-3xl">
@@ -105,11 +99,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="p-4 text-center text-gray-600 text-sm bg-white border-t border-orange-100">
-        <p>© {new Date().getFullYear()} Tutifrutsy - {language === 'en' ? 'All rights reserved' : 'Todos los derechos reservados'} || Powered by Mutech Business</p>
-      </footer>
     </div>
   )
 }

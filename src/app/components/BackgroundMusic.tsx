@@ -73,7 +73,7 @@ export default function BackgroundMusic() {
         audioRef.current = null
       }
     }
-  }, [])
+  }, [isPlaying])
 
   const togglePlay = () => {
     if (!audioRef.current) return

@@ -1,24 +1,27 @@
 'use client'
 
-import Link from 'next/link'
+import { useState, useEffect } from 'react'
+import { useLanguage } from '@/app/context/LanguageContext'
+import { getAllProducts } from '@/app/data/database'
+import ProductCard from '@/app/components/ProductCard'
+import type { Product } from '@/app/data/database'
 import Image from 'next/image'
-import { getAllProducts, Product } from '../data/database'
-import ClientLanguageSwitcher from '../components/ClientLanguageSwitcher'
-import { useLanguage } from '../context/LanguageContext'
-import { useEffect, useState } from 'react'
+import SearchBar from '@/app/components/SearchBar'
 
 export default function ProductsPage() {
-  const { language } = useLanguage()
   const [products, setProducts] = useState<Product[]>([])
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([])
   const [loading, setLoading] = useState(true)
+  const { language } = useLanguage()
 
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const data = await getAllProducts()
-        // Randomize the products array
-        const randomizedProducts = [...data].sort(() => Math.random() - 0.5)
+        const allProducts = await getAllProducts()
+        // Randomize the order of products
+        const randomizedProducts = [...allProducts].sort(() => Math.random() - 0.5)
         setProducts(randomizedProducts)
+        setFilteredProducts(randomizedProducts)
       } catch (error) {
         console.error('Error loading products:', error)
       } finally {
@@ -29,73 +32,52 @@ export default function ProductsPage() {
     loadProducts()
   }, [])
 
+  const handleSearch = (searchTerm: string) => {
+    if (!searchTerm.trim()) {
+      setFilteredProducts(products)
+      return
+    }
+
+    const searchLower = searchTerm.toLowerCase()
+    const filtered = products.filter(product => 
+      product.name[language].toLowerCase().includes(searchLower) ||
+      product.description[language].toLowerCase().includes(searchLower)
+    )
+    setFilteredProducts(filtered)
+  }
 
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-pulse text-orange-500">Loading...</div>
+        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-orange-500"></div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen p-8 bg-gradient-to-b from-orange-50 via-white to-orange-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
-          <Link
-            href="/"
-            className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text hover:from-orange-600 hover:to-red-600"
-          >
-            Tutifrutsy
-          </Link>
-          <ClientLanguageSwitcher />
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-orange-50 to-white">
+      <div className="container mx-auto px-4 py-8 flex-grow">
+        <div className="flex justify-center mb-8">
+          <Image
+            src="/images/logo.png"
+            alt="Tutifrutsy Logo"
+            width={192}
+            height={48}
+            priority
+          />
         </div>
+        
+        <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-transparent bg-clip-text">
+          {language === 'en' ? 'Our Products' : 'Nuestros Productos'}
+        </h1>
 
-        <main className="container mx-auto px-4 py-8">
-          <div className="text-center mb-12">
-            <div className="mb-8">
-              <Image
-                src="/images/Logo.png"
-                alt="Tutifrutsy Logo"
-                width={256}
-                height={256}
-                className="h-48 md:h-64 w-auto mx-auto"
-              />
-            </div>
-            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-transparent bg-clip-text">
-              {language === 'en' ? 'Our Products' : 'Nuestros Productos'}
-            </h1>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product) => (
-              <Link
-                href={`/items/${product.id}`}
-                key={product.id}
-                className="block group"
-              >
-                <div className="bg-white border-2 border-orange-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:scale-105 hover:border-orange-400">
-                  <div className="relative w-full h-56">
-                    <Image
-                      src={`/images/${product.id}.jpg`}
-                      alt={product.name[language]}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                      className="group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  </div>
-                  <div className="p-6 bg-gradient-to-b from-white to-orange-50">
-                    <h2 className="text-2xl font-semibold mb-3 bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text">{product.name[language]}</h2>
-                    <p className="text-gray-800 line-clamp-2">
-                      {product.description[language]}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </main>
+        <SearchBar onSearch={handleSearch} />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </div>
     </div>
   )

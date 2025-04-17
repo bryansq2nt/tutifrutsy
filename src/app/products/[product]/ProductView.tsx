@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useLanguage } from '@/app/context/LanguageContext'
 import { Product } from '@/app/data/products'
-import ClientLanguageSwitcher from '@/app/components/ClientLanguageSwitcher'
 import { useState } from 'react'
 
 interface ProductContentProps {
@@ -121,7 +120,6 @@ export default function ProductView({ product }: ProductContentProps) {
           {language === 'en' ? 'Back to Products' : 'Volver a Productos'}
         </button>
 
-        <ClientLanguageSwitcher />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -3,9 +3,9 @@
 import Image from 'next/image'
 import { useLanguage } from '@/app/context/LanguageContext'
 import { Product } from '@/app/data/database'
-import ClientLanguageSwitcher from '@/app/components/ClientLanguageSwitcher'
 import { useState } from 'react'
 import Link from 'next/link'
+import VisitCounter from '@/app/components/VisitCounter'
 
 interface ProductContentProps {
   product: Product
@@ -33,7 +33,6 @@ export default function ItemView({ product }: ProductContentProps) {
       en: 'Best way to eat',
       es: 'Mejor manera de comer'
     }
-  
   }
 
   // Define available tabs based on product properties
@@ -42,7 +41,6 @@ export default function ItemView({ product }: ProductContentProps) {
     { id: 'origin', label: sectionTitles.origin[language] },
     { id: 'healthBenefits', label: sectionTitles.healthBenefits[language] },
     { id: 'servingSuggestion', label: sectionTitles.servingSuggestion[language] },
-    
   ]
 
   // Render content based on active tab
@@ -56,7 +54,6 @@ export default function ItemView({ product }: ProductContentProps) {
         return <p className="text-gray-600">{product["Health Benefits"][language]}</p>
       case 'servingSuggestion':
         return <p className="text-gray-600">{product["Best way to eat"][language]}</p>
-   
       default:
         return <p className="text-gray-600">{product.description[language]}</p>
     }
@@ -64,7 +61,7 @@ export default function ItemView({ product }: ProductContentProps) {
 
   return (
     <div className="space-y-8">
-      {/* Header with Back Button and Language Switch */}
+      {/* Header with Back Button */}
       <div className="flex justify-between items-center">
         <Link
           href="/items"
@@ -86,8 +83,6 @@ export default function ItemView({ product }: ProductContentProps) {
           </svg>
           {language === 'en' ? 'Back to Products' : 'Volver a Productos'}
         </Link>
-
-        <ClientLanguageSwitcher />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -99,50 +94,48 @@ export default function ItemView({ product }: ProductContentProps) {
               alt={product.name[language]}
               fill
               className="object-cover"
-              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          
+        
         </div>
 
-        {/* Product Details */}
+        {/* Product Info */}
         <div className="space-y-6">
-          <h1 className="text-3xl font-bold text-gray-900">{product.name[language]}</h1>
-          
-          {/* Tabbed Interface */}
-          <div className="mt-6">
-            {/* Tabs */}
-            <div className="border-b border-gray-200">
-              <nav className="-mb-px flex space-x-4 overflow-x-auto pb-2" aria-label="Tabs">
-                {availableTabs.map((tab) => (
-                  <button
-                    key={tab.id}
-                    onClick={() => setActiveTab(tab.id)}
-                    className={`
-                      whitespace-nowrap py-2 px-3 border-b-2 font-medium text-sm
-                      ${activeTab === tab.id
+          <h1 className="text-3xl font-bold text-gray-900">
+            {product.name[language]}
+          </h1>
+          <VisitCounter productId={product.id} />
+          {/* Tabs */}
+          <div className="border-b border-gray-200">
+            <nav className="-mb-px flex space-x-8">
+              {availableTabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`
+                    py-4 px-1 border-b-2 font-medium text-sm
+                    ${
+                      activeTab === tab.id
                         ? 'border-orange-500 text-orange-600'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                      }
-                    `}
-                    aria-current={activeTab === tab.id ? 'page' : undefined}
-                  >
-                    {tab.label}
-                  </button>
-                ))}
-              </nav>
-            </div>
-            
-            {/* Tab Content */}
-            <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-              <h2 className="text-xl font-semibold text-gray-900 mb-3">
-                {sectionTitles[activeTab as keyof typeof sectionTitles][language]}
-              </h2>
-              {renderTabContent()}
-            </div>
+                    }
+                  `}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </nav>
+          </div>
+
+          {/* Tab Content */}
+          <div className="py-4">
+            {renderTabContent()}
           </div>
         </div>
       </div>
+
+      
     </div>
   )
 } 
