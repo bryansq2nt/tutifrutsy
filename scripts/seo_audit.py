@@ -12,6 +12,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = "https://tutifrutsy.com/"
+EN_URL = "https://tutifrutsy.com/en/"
+GOOGLE_MAPS_URL = "https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA"
+APPLE_MAPS_URL = "https://maps.apple/p/sN~ZwnLskBm_bJ"
 MAX_META_DESCRIPTION = 160
 MAX_TITLE = 70
 
@@ -24,6 +27,9 @@ class HeadParser(HTMLParser):
         self.title_parts: list[str] = []
         self.meta: dict[tuple[str, str], str] = {}
         self.links: dict[str, str] = {}
+        self.alternates: dict[str, str] = {}
+        self.img_srcs: list[str] = []
+        self.script_srcs: list[str] = []
         self.json_ld_blocks: list[str] = []
         self._json_ld_parts: list[str] = []
 
@@ -38,6 +44,12 @@ class HeadParser(HTMLParser):
                 self.meta[("property", attr["property"])] = attr.get("content", "")
         elif tag == "link" and "rel" in attr:
             self.links[attr["rel"]] = attr.get("href", "")
+            if attr["rel"] == "alternate" and "hreflang" in attr:
+                self.alternates[attr["hreflang"]] = attr.get("href", "")
+        elif tag == "img" and "src" in attr:
+            self.img_srcs.append(attr["src"])
+        elif tag == "script" and "src" in attr:
+            self.script_srcs.append(attr["src"])
         elif tag == "script" and attr.get("type") == "application/ld+json":
             self.in_json_ld = True
             self._json_ld_parts = []
@@ -76,40 +88,59 @@ def require(condition: bool, message: str, failures: list[str]) -> None:
         fail(message, failures)
 
 
-def audit_html(failures: list[str]) -> None:
+def audit_page(relative_path: str, expected_url: str, expected_lang: str, failures: list[str]) -> None:
+    path = ROOT / relative_path
     parser = HeadParser()
-    parser.feed((ROOT / "index.html").read_text(encoding="utf-8"))
+    html = path.read_text(encoding="utf-8")
+    parser.feed(html)
 
     title = parser.title
     description = parser.meta.get(("name", "description"), "")
     robots = parser.meta.get(("name", "robots"), "")
     canonical = parser.links.get("canonical", "")
 
-    require(bool(title), "title tag exists", failures)
-    require(len(title) <= MAX_TITLE, f"title is {len(title)} chars (<= {MAX_TITLE})", failures)
-    require(bool(description), "meta description exists", failures)
+    require(f'<html lang="{expected_lang}">' in html, f"{relative_path} html lang is {expected_lang}", failures)
+    require(bool(title), f"{relative_path} title tag exists", failures)
+    require(len(title) <= MAX_TITLE, f"{relative_path} title is {len(title)} chars (<= {MAX_TITLE})", failures)
+    require(bool(description), f"{relative_path} meta description exists", failures)
     require(
         50 <= len(description) <= MAX_META_DESCRIPTION,
-        f"meta description is {len(description)} chars (50-{MAX_META_DESCRIPTION})",
+        f"{relative_path} meta description is {len(description)} chars (50-{MAX_META_DESCRIPTION})",
         failures,
     )
-    require("index" in robots and "follow" in robots, "robots meta allows indexing and following", failures)
-    require(canonical == SITE_URL, "canonical URL is the production home page", failures)
+    require("index" in robots and "follow" in robots, f"{relative_path} robots meta allows indexing and following", failures)
+    require(canonical == expected_url, f"{relative_path} canonical URL is correct", failures)
+    require(parser.alternates.get("es-US") == SITE_URL, f"{relative_path} has es-US hreflang", failures)
+    require(parser.alternates.get("en-US") == EN_URL, f"{relative_path} has en-US hreflang", failures)
+    require(parser.alternates.get("x-default") == SITE_URL, f"{relative_path} has x-default hreflang", failures)
+    require(GOOGLE_MAPS_URL in html, f"{relative_path} includes real Google Maps URL", failures)
+    require(APPLE_MAPS_URL in html, f"{relative_path} includes Apple Maps URL", failures)
+
+    if relative_path.startswith("en/"):
+        require('href="/styles.css"' in html, "English page loads root stylesheet", failures)
+        require('src="/script.js"' in html, "English page loads root script", failures)
+        require(all(not src.startswith("assets/") for src in parser.img_srcs), "English page image paths are root-relative", failures)
 
     for key in ["og:title", "og:description", "og:url", "og:image", "og:site_name"]:
-        require(bool(parser.meta.get(("property", key))), f"{key} exists", failures)
+        require(bool(parser.meta.get(("property", key))), f"{relative_path} {key} exists", failures)
 
     for key in ["twitter:card", "twitter:title", "twitter:description", "twitter:image"]:
-        require(bool(parser.meta.get(("name", key))), f"{key} exists", failures)
+        require(bool(parser.meta.get(("name", key))), f"{relative_path} {key} exists", failures)
 
-    require(bool(parser.json_ld_blocks), "JSON-LD structured data exists", failures)
+    require(bool(parser.json_ld_blocks), f"{relative_path} JSON-LD structured data exists", failures)
     for block in parser.json_ld_blocks:
         data = json.loads(block)
         graph = data.get("@graph", [])
         types = {item.get("@type") for item in graph if isinstance(item, dict)}
-        require("FoodEstablishment" in types, "JSON-LD includes FoodEstablishment", failures)
-        require("WebSite" in types, "JSON-LD includes WebSite", failures)
-        require("WebPage" in types, "JSON-LD includes WebPage", failures)
+        require("FoodEstablishment" in types, f"{relative_path} JSON-LD includes FoodEstablishment", failures)
+        require("WebSite" in types, f"{relative_path} JSON-LD includes WebSite", failures)
+        require("WebPage" in types, f"{relative_path} JSON-LD includes WebPage", failures)
+        require(any(item.get("availableLanguage") == ["es-US", "en-US"] for item in graph if isinstance(item, dict)), f"{relative_path} JSON-LD lists available languages", failures)
+
+
+def audit_html(failures: list[str]) -> None:
+    audit_page("index.html", SITE_URL, "es-US", failures)
+    audit_page("en/index.html", EN_URL, "en-US", failures)
 
 
 def audit_robots(failures: list[str]) -> None:
@@ -124,7 +155,7 @@ def audit_sitemap(failures: list[str]) -> None:
     root = tree.getroot()
     namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     locs = [item.text for item in root.findall(".//sm:loc", namespace)]
-    for url in [SITE_URL, f"{SITE_URL}llms.txt", f"{SITE_URL}llms-full.txt"]:
+    for url in [SITE_URL, EN_URL, f"{SITE_URL}llms.txt", f"{SITE_URL}llms-full.txt"]:
         require(url in locs, f"sitemap includes {url}", failures)
 
 
@@ -136,6 +167,9 @@ def audit_llms(failures: list[str]) -> None:
         require("Tutifrutsy" in text, f"{filename} names Tutifrutsy", failures)
         require("46859 Leesburg Pike" in text, f"{filename} includes address", failures)
         require("10:00 AM - 9:30 PM" in text, f"{filename} includes hours", failures)
+        require("https://tutifrutsy.com/en/" in text, f"{filename} includes English URL", failures)
+        require(GOOGLE_MAPS_URL in text, f"{filename} includes Google Maps URL", failures)
+        require(APPLE_MAPS_URL in text, f"{filename} includes Apple Maps URL", failures)
 
 
 def main() -> int:

@@ -85,6 +85,7 @@ Sube estos archivos y carpetas a tu hosting:
 
 ```text
 index.html
+en/
 styles.css
 script.js
 robots.txt
@@ -145,3 +146,17 @@ Ese comando hace todo en orden:
 5. Llama a IndexNow con las URLs del sitemap.
 
 Si el repo no tiene remote de Git, si el push falla, si el deploy falla, o si la verificacion publica falla, el flujo se detiene antes de llamar IndexNow.
+
+## Idiomas
+
+El sitio tiene dos versiones indexables:
+
+- Español: `https://tutifrutsy.com/`
+- Ingles: `https://tutifrutsy.com/en/`
+
+La pagina principal detecta el idioma del dispositivo. Si el visitante usa un dispositivo en ingles y no ha elegido idioma antes, se envia automaticamente a `/en/`. El boton del header guarda la preferencia del usuario en `localStorage`.
+
+Los enlaces reales de mapas son:
+
+- Google Maps: https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA
+- Apple Maps: https://maps.apple/p/sN~ZwnLskBm_bJ

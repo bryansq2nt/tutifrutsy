@@ -57,6 +57,7 @@ The script uploads only changed files from the public static site:
 
 ```text
 index.html
+en/
 styles.css
 script.js
 robots.txt
@@ -106,6 +107,8 @@ python3 scripts/seo_audit.py
 After deploying, verify the public indexing files:
 
 ```bash
+curl -I -L https://tutifrutsy.com/
+curl -I -L https://tutifrutsy.com/en/
 curl -I -L https://tutifrutsy.com/robots.txt
 curl -I -L https://tutifrutsy.com/sitemap.xml
 curl -I -L https://tutifrutsy.com/llms.txt
@@ -131,7 +134,7 @@ The release script intentionally runs in this order:
 1. Local SEO audit.
 2. Git add, commit, and push.
 3. FTP deploy.
-4. Public URL verification.
+4. Public URL verification, including the English page.
 5. IndexNow sitemap submission.
 
 IndexNow is not called until the deploy finishes and the live URLs respond successfully. If Git push fails or the site verification fails, the script stops.

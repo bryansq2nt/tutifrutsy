@@ -15,6 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_URLS = [
     "https://tutifrutsy.com/",
+    "https://tutifrutsy.com/en/",
     "https://tutifrutsy.com/robots.txt",
     "https://tutifrutsy.com/sitemap.xml",
     "https://tutifrutsy.com/llms.txt",
@@ -112,8 +113,11 @@ def verify_public_urls() -> None:
 
         if url.endswith("robots.txt") and "Sitemap: https://tutifrutsy.com/sitemap.xml" not in body:
             raise ReleaseError("robots.txt is live but does not include the sitemap URL.")
-        if url.endswith("sitemap.xml") and "https://tutifrutsy.com/" not in body:
-            raise ReleaseError("sitemap.xml is live but does not include the home page URL.")
+        if url.endswith("sitemap.xml"):
+            if "https://tutifrutsy.com/" not in body:
+                raise ReleaseError("sitemap.xml is live but does not include the Spanish home page URL.")
+            if "https://tutifrutsy.com/en/" not in body:
+                raise ReleaseError("sitemap.xml is live but does not include the English page URL.")
         if url.endswith("llms.txt") and "Tutifrutsy" not in body:
             raise ReleaseError("llms.txt is live but does not include Tutifrutsy content.")
         if url.rsplit("/", 1)[-1].endswith(".txt") and "llms" not in url:

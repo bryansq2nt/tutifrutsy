@@ -1,3 +1,29 @@
+const LANGUAGE_STORAGE_KEY = "tutifrutsy-language";
+const currentLanguage = document.documentElement.lang.toLowerCase().startsWith("en") ? "en" : "es";
+const preferredLanguage = (() => {
+  try {
+    return window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+  } catch {
+    return null;
+  }
+})();
+const deviceLanguage = (navigator.languages?.[0] || navigator.language || "es").toLowerCase();
+const isCrawler = /bot|crawl|spider|slurp|bingpreview|duckduckgo|baiduspider|yandex/i.test(navigator.userAgent || "");
+
+if (!isCrawler && currentLanguage === "es" && !preferredLanguage && deviceLanguage.startsWith("en")) {
+  window.location.replace("/en/");
+}
+
+document.querySelectorAll("[data-lang-switch]").forEach((link) => {
+  link.addEventListener("click", () => {
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, link.dataset.targetLang || "es");
+    } catch {
+      // Navigation still works when localStorage is unavailable.
+    }
+  });
+});
+
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const header = document.querySelector("[data-header]");
@@ -11,14 +37,14 @@ if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? "Cerrar menu" : "Abrir menu");
+    navToggle.setAttribute("aria-label", isOpen ? (currentLanguage === "en" ? "Close menu" : "Cerrar menu") : (currentLanguage === "en" ? "Open menu" : "Abrir menu"));
   });
 
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
-      navToggle.setAttribute("aria-label", "Abrir menu");
+      navToggle.setAttribute("aria-label", currentLanguage === "en" ? "Open menu" : "Abrir menu");
     });
   });
 }
@@ -159,7 +185,7 @@ if (featuredCarousel) {
       const dot = document.createElement("button");
       dot.type = "button";
       dot.className = "carousel-dot";
-      dot.setAttribute("aria-label", `Ver productos ${first} a ${last}`);
+      dot.setAttribute("aria-label", currentLanguage === "en" ? `View products ${first} to ${last}` : `Ver productos ${first} a ${last}`);
       dot.addEventListener("click", () => {
         stopAutoplay();
         goTo(index);

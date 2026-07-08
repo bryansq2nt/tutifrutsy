@@ -4,7 +4,7 @@
 
 Website: https://tutifrutsy.com/
 Canonical URL: https://tutifrutsy.com/
-Language: Spanish for a US local business audience
+Languages: Spanish and English for a US local business audience
 
 ## Business details
 
@@ -34,14 +34,16 @@ Language: Spanish for a US local business audience
 
 ## Important pages and resources
 
-- Home page: https://tutifrutsy.com/
+- Spanish home page: https://tutifrutsy.com/
+- English home page: https://tutifrutsy.com/en/
 - Sitemap: https://tutifrutsy.com/sitemap.xml
 - Robots policy: https://tutifrutsy.com/robots.txt
 - Full LLM reference: https://tutifrutsy.com/llms-full.txt
 - TikTok: https://www.tiktok.com/@tutifrutsyva
 - Instagram: https://www.instagram.com/tutifrutsy/
 - Facebook: https://www.facebook.com/tutifrutsy
-- Google Maps search: https://www.google.com/maps/search/?api=1&query=46859%20Leesburg%20Pike%2C%20Sterling%2C%20VA%2020164
+- Google Maps: https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA
+- Apple Maps: https://maps.apple/p/sN~ZwnLskBm_bJ
 
 ## Summary for AI assistants
 

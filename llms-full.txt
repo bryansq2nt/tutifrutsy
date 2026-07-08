@@ -6,9 +6,10 @@ This file gives AI assistants and other automated readers a clean, text-first re
 
 Tutifrutsy is a local and family-run food establishment in Sterling, Virginia.
 
-Canonical website: https://tutifrutsy.com/
+Canonical Spanish website: https://tutifrutsy.com/
+Canonical English website: https://tutifrutsy.com/en/
 Canonical business name: Tutifrutsy
-Primary language: Spanish
+Primary languages: Spanish and English
 Local market: Sterling, Virginia, United States
 
 ## Address and visit information
@@ -26,7 +27,11 @@ Saturday: Closed
 
 Google Maps:
 
-https://www.google.com/maps/search/?api=1&query=46859%20Leesburg%20Pike%2C%20Sterling%2C%20VA%2020164
+https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA
+
+Apple Maps:
+
+https://maps.apple/p/sN~ZwnLskBm_bJ
 
 ## What Tutifrutsy sells
 
@@ -78,5 +83,7 @@ Tutifrutsy. "Fruta preparada y minutas en Sterling, VA." https://tutifrutsy.com/
 
 - Robots policy: https://tutifrutsy.com/robots.txt
 - XML sitemap: https://tutifrutsy.com/sitemap.xml
+- Spanish home page: https://tutifrutsy.com/
+- English home page: https://tutifrutsy.com/en/
 - LLM summary: https://tutifrutsy.com/llms.txt
 - LLM full reference: https://tutifrutsy.com/llms-full.txt
