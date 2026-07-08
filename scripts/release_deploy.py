@@ -104,7 +104,8 @@ def fetch_url(url: str) -> tuple[int, str]:
 
 
 def verify_public_urls() -> None:
-    urls = [*PUBLIC_URLS, indexnow_key_url()]
+    key_url = indexnow_key_url()
+    urls = [*PUBLIC_URLS, key_url]
     for url in urls:
         status, body = fetch_url(url)
         if not 200 <= status < 400:
@@ -113,14 +114,14 @@ def verify_public_urls() -> None:
 
         if url.endswith("robots.txt") and "Sitemap: https://tutifrutsy.com/sitemap.xml" not in body:
             raise ReleaseError("robots.txt is live but does not include the sitemap URL.")
-        if url.endswith("sitemap.xml"):
+        elif url.endswith("sitemap.xml"):
             if "https://tutifrutsy.com/" not in body:
                 raise ReleaseError("sitemap.xml is live but does not include the Spanish home page URL.")
             if "https://tutifrutsy.com/en/" not in body:
                 raise ReleaseError("sitemap.xml is live but does not include the English page URL.")
-        if url.endswith("llms.txt") and "Tutifrutsy" not in body:
+        elif url.endswith("llms.txt") and "Tutifrutsy" not in body:
             raise ReleaseError("llms.txt is live but does not include Tutifrutsy content.")
-        if url.rsplit("/", 1)[-1].endswith(".txt") and "llms" not in url:
+        elif url == key_url:
             key = url.rsplit("/", 1)[-1].removesuffix(".txt")
             if body.strip() != key:
                 raise ReleaseError("IndexNow key file is live but its content does not match the file name.")

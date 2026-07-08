@@ -117,7 +117,11 @@ def audit_page(relative_path: str, expected_url: str, expected_lang: str, failur
     require(APPLE_MAPS_URL in html, f"{relative_path} includes Apple Maps URL", failures)
 
     if relative_path.startswith("en/"):
-        require('href="/styles.css"' in html, "English page loads root stylesheet", failures)
+        require(
+            any(href.startswith("/styles.css") for href in parser.links.values()),
+            "English page loads root stylesheet",
+            failures,
+        )
         require('src="/script.js"' in html, "English page loads root script", failures)
         require(all(not src.startswith("assets/") for src in parser.img_srcs), "English page image paths are root-relative", failures)
 
