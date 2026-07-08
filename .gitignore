@@ -1,0 +1,11 @@
+# Secrets
+.env
+.deploy.env
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
