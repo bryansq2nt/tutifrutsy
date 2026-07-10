@@ -88,6 +88,17 @@ def require(condition: bool, message: str, failures: list[str]) -> None:
         fail(message, failures)
 
 
+def has_schema_type(value: object, schema_type: str) -> bool:
+    if isinstance(value, dict):
+        item_type = value.get("@type")
+        if item_type == schema_type or (isinstance(item_type, list) and schema_type in item_type):
+            return True
+        return any(has_schema_type(child, schema_type) for child in value.values())
+    if isinstance(value, list):
+        return any(has_schema_type(child, schema_type) for child in value)
+    return False
+
+
 def audit_page(relative_path: str, expected_url: str, expected_lang: str, failures: list[str]) -> None:
     path = ROOT / relative_path
     parser = HeadParser()
@@ -139,6 +150,9 @@ def audit_page(relative_path: str, expected_url: str, expected_lang: str, failur
         require("FoodEstablishment" in types, f"{relative_path} JSON-LD includes FoodEstablishment", failures)
         require("WebSite" in types, f"{relative_path} JSON-LD includes WebSite", failures)
         require("WebPage" in types, f"{relative_path} JSON-LD includes WebPage", failures)
+        require(not has_schema_type(data, "Product"), f"{relative_path} JSON-LD avoids Product markup without offer/review/rating data", failures)
+        require(has_schema_type(data, "Menu"), f"{relative_path} JSON-LD includes menu structured data", failures)
+        require(has_schema_type(data, "MenuItem"), f"{relative_path} JSON-LD includes menu items", failures)
         require(any(item.get("availableLanguage") == ["es-US", "en-US"] for item in graph if isinstance(item, dict)), f"{relative_path} JSON-LD lists available languages", failures)
 
 
