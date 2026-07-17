@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tutifrutsy | Fruta preparada y minutas en Sterling, VA</title>
-    <meta name="description" content="Tutifrutsy en Sterling, VA: fruta preparada, minutas, agua de coco, jugo de caña, pan dulce y antojitos tropicales.">
-    <meta name="keywords" content="Tutifrutsy, fruta preparada, minutas, Sterling VA, frutas tropicales, agua de coco, jugo de caña, mango preparado, antojitos latinos">
+    <title>Tutifrutsy | Fruta preparada en Sterling y Leesburg, VA</title>
+    <meta name="description" content="Tutifrutsy en Sterling y Leesburg, VA: fruta preparada, minutas, agua de coco, jugo de caña y antojitos tropicales en Sterling y Route 15.">
+    <meta name="keywords" content="Tutifrutsy, fruta preparada, minutas, Leesburg VA, Sterling VA, Route 15, Leesburg Pike, frutas tropicales, agua de coco, jugo de caña, mango preparado, antojitos latinos">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Tutifrutsy">
     <meta name="theme-color" content="#f7c32e">
     <meta name="geo.region" content="US-VA">
-    <meta name="geo.placename" content="Sterling">
+    <meta name="geo.placename" content="Leesburg, Sterling">
     <link rel="canonical" href="https://tutifrutsy.com/">
     <link rel="alternate" hreflang="es-US" href="https://tutifrutsy.com/">
     <link rel="alternate" hreflang="en-US" href="https://tutifrutsy.com/en/">
     <link rel="alternate" hreflang="x-default" href="https://tutifrutsy.com/">
 
-    <meta property="og:title" content="Tutifrutsy | Fruta preparada y minutas en Sterling, VA">
-    <meta property="og:description" content="Tutifrutsy en Sterling, VA: fruta preparada, minutas, agua de coco, jugo de caña, pan dulce y antojitos tropicales.">
+    <meta property="og:title" content="Tutifrutsy | Fruta preparada en Sterling y Leesburg, VA">
+    <meta property="og:description" content="Visite Tutifrutsy en Sterling o en nuestra nueva parada de Route 15, Leesburg. Fruta preparada, minutas, bebidas naturales y antojitos tropicales.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tutifrutsy.com/">
     <meta property="og:image" content="https://tutifrutsy.com/assets/logo.png">
@@ -26,8 +26,8 @@
     <meta property="og:site_name" content="Tutifrutsy">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tutifrutsy | Fruta preparada y minutas en Sterling, VA">
-    <meta name="twitter:description" content="Fruta preparada, minutas, agua de coco, jugo de caña, pan dulce y antojitos tropicales en Sterling, Virginia.">
+    <meta name="twitter:title" content="Tutifrutsy | Fruta preparada en Sterling y Leesburg, VA">
+    <meta name="twitter:description" content="Ubicación principal en Sterling y nueva parada en Route 15, Leesburg. Fruta preparada, minutas y antojitos tropicales.">
     <meta name="twitter:image" content="https://tutifrutsy.com/assets/logo.png">
 
     <link rel="icon" href="assets/favicon.ico" sizes="any">
@@ -41,16 +41,83 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "FoodEstablishment",
+            "@type": "Organization",
             "@id": "https://tutifrutsy.com/#business",
             "name": "Tutifrutsy",
             "url": "https://tutifrutsy.com/",
+            "logo": "https://tutifrutsy.com/assets/logo.png",
             "image": [
               "https://tutifrutsy.com/assets/logo.png",
               "https://tutifrutsy.com/assets/images/hero.jpg",
+              "https://tutifrutsy.com/assets/images/route15-stand-768.webp"
+            ],
+            "description": "Tutifrutsy sirve fruta preparada, minutas, agua de coco, jugo de caña, pan dulce, snacks y antojitos tropicales en Sterling y Leesburg, Virginia.",
+            "sameAs": [
+              "https://www.tiktok.com/@tutifrutsyva",
+              "https://www.instagram.com/tutifrutsy/",
+              "https://www.facebook.com/tutifrutsy"
+            ]
+          },
+          {
+            "@type": "FoodEstablishment",
+            "@id": "https://tutifrutsy.com/#leesburg-route15",
+            "name": "Tutifrutsy Route 15 Leesburg",
+            "url": "https://tutifrutsy.com/#ubicacion",
+            "image": [
+              "https://tutifrutsy.com/assets/images/route15-stand-768.webp",
+              "https://tutifrutsy.com/assets/images/route15-fruit-768.webp"
+            ],
+            "description": "Nueva ubicacion de Tutifrutsy en el parqueo de Shell sobre Route 15 en Leesburg, Virginia.",
+            "parentOrganization": {
+              "@id": "https://tutifrutsy.com/#business"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "14425 James Monroe Hwy",
+              "addressLocality": "Leesburg",
+              "addressRegion": "VA",
+              "postalCode": "20176",
+              "addressCountry": "US"
+            },
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=14425%20James%20Monroe%20Hwy%2C%20Leesburg%2C%20VA%2020176",
+            "servesCuisine": [
+              "Latin American",
+              "Tropical fruit",
+              "Desserts",
+              "Snacks"
+            ],
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Leesburg"
+              },
+              {
+                "@type": "City",
+                "name": "Lucketts"
+              },
+              {
+                "@type": "City",
+                "name": "Point of Rocks"
+              },
+              {
+                "@type": "City",
+                "name": "Frederick"
+              }
+            ]
+          },
+          {
+            "@type": "FoodEstablishment",
+            "@id": "https://tutifrutsy.com/#sterling-leesburg-pike",
+            "name": "Tutifrutsy Sterling",
+            "url": "https://tutifrutsy.com/#ubicacion",
+            "image": [
+              "https://tutifrutsy.com/assets/images/hero.jpg",
               "https://tutifrutsy.com/assets/images/trailer.jpg"
             ],
-            "description": "Tutifrutsy es un negocio local y familiar en Sterling, Virginia, con fruta preparada, minutas, agua de coco, jugo de caña, pan dulce, snacks y antojitos tropicales.",
+            "description": "Ubicacion de Tutifrutsy en Leesburg Pike, Sterling, Virginia.",
+            "parentOrganization": {
+              "@id": "https://tutifrutsy.com/#business"
+            },
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "46859 Leesburg Pike",
@@ -60,13 +127,6 @@
               "addressCountry": "US"
             },
             "hasMap": "https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA",
-            "additionalProperty": [
-              {
-                "@type": "PropertyValue",
-                "name": "Apple Maps",
-                "value": "https://maps.apple/p/sN~ZwnLskBm_bJ"
-              }
-            ],
             "openingHoursSpecification": [
               {
                 "@type": "OpeningHoursSpecification",
@@ -129,12 +189,7 @@
                   ]
                 }
               ]
-            },
-            "sameAs": [
-              "https://www.tiktok.com/@tutifrutsyva",
-              "https://www.instagram.com/tutifrutsy/",
-              "https://www.facebook.com/tutifrutsy"
-            ]
+            }
           },
           {
             "@type": "WebSite",
@@ -154,8 +209,8 @@
             "@type": "WebPage",
             "@id": "https://tutifrutsy.com/#webpage",
             "url": "https://tutifrutsy.com/",
-            "name": "Tutifrutsy | Fruta preparada y minutas en Sterling, VA",
-            "description": "Tutifrutsy en Sterling, VA: fruta preparada, minutas, agua de coco, jugo de caña, pan dulce y antojitos tropicales.",
+            "name": "Tutifrutsy | Fruta preparada en Sterling y Leesburg, VA",
+            "description": "Tutifrutsy tiene su ubicacion principal en Sterling y una nueva parada en Route 15, Leesburg.",
             "inLanguage": "es-US",
             "isPartOf": {
               "@id": "https://tutifrutsy.com/#website"
@@ -206,6 +261,10 @@
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <a class="floating-menu-cta" href="#pedido" aria-label="Ir al menu">
+      <span aria-hidden="true"></span>
+      Menú
+    </a>
 
     <header class="site-header" data-header>
       <div class="header-inner">
@@ -252,11 +311,11 @@
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-content">
           <img class="hero-logo" src="assets/logo-360.webp" alt="Tutifrutsy" width="180" height="180" decoding="async" fetchpriority="high">
-          <p class="eyebrow">Sterling, Virginia</p>
-          <h1 id="hero-title">Fruta preparada, minutas y sabores tropicales en Sterling, VA</h1>
-          <p class="hero-copy">Visitenos en Tutifrutsy y disfrute fruta fresca, minutas, agua de coco, jugo de caña, pan dulce y antojitos preparados con sabor de casa.</p>
+          <p class="eyebrow">Sterling y Leesburg, Virginia</p>
+          <h1 id="hero-title">Fruta preparada, minutas y sabores tropicales en dos ubicaciones</h1>
+          <p class="hero-copy">Visitenos en nuestra ubicacion principal de Sterling y tambien en la nueva parada de Route 15, Leesburg. Fruta fresca, minutas, agua de coco, jugo de caña, pan dulce y antojitos preparados con sabor de casa.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA" target="_blank" rel="noopener">Como llegar</a>
+            <a class="btn btn-primary" href="#ubicacion">Ver ubicaciones</a>
             <a class="btn btn-secondary" href="https://www.tiktok.com/@tutifrutsyva" target="_blank" rel="noopener">Ver TikTok</a>
           </div>
         </div>
@@ -264,17 +323,13 @@
 
       <section class="quick-info" aria-label="Informacion rapida">
         <div class="quick-info-inner">
-          <article>
-            <span>Direccion</span>
+          <article class="quick-address">
+            <span>Ubicacion principal</span>
             <strong>46859 Leesburg Pike, Sterling, VA 20164</strong>
           </article>
-          <article>
-            <span>Horario</span>
-            <strong>Domingo a viernes: 10:00 AM - 9:30 PM</strong>
-          </article>
-          <article class="closed">
-            <span>Importante</span>
-            <strong>Cerrado los sabados</strong>
+          <article class="quick-address">
+            <span>Nueva ubicacion</span>
+            <strong>14425 James Monroe Hwy, Leesburg, VA 20176</strong>
           </article>
         </div>
       </section>
@@ -398,7 +453,7 @@
           </div>
 
           <div class="product-photo">
-            <img src="assets/images/trailer-1000.webp" alt="Puesto de Tutifrutsy con frutas y antojitos" width="1000" height="1779" loading="lazy" decoding="async">
+            <img src="assets/images/trailer-1000.webp" alt="Puesto principal de Tutifrutsy con frutas y antojitos" width="1000" height="1779" loading="lazy" decoding="async">
           </div>
         </div>
       </section>
@@ -440,8 +495,8 @@
         </div>
         <div class="story-copy">
           <p class="eyebrow">Nuestra historia</p>
-          <h2 id="historia-title">Sabor familiar en Sterling</h2>
-          <p>Somos un negocio local y familiar en Sterling, Virginia. En Tutifrutsy queremos que cada cliente disfrute productos frescos, preparados con sabor y servidos con alegria.</p>
+          <h2 id="historia-title">Sabor Latino en Sterling y Leesburg</h2>
+          <p>Somos un negocio local y familiar en Virginia. En Tutifrutsy queremos que cada cliente disfrute productos frescos, preparados con sabor y servidos con alegria.</p>
           <p>Aqui encuentran fruta preparada, minutas, bebidas naturales, pan dulce, snacks y antojitos que recuerdan ese sabor de casa. Y no lo decimos solo nosotros: nuestros clientes regresan por la fruta, las minutas, la miel y, sobre todo, por el servicio.</p>
           <p class="signature">En Tutifrutsy lo atendemos mejor que en su casa.</p>
         </div>
@@ -450,38 +505,66 @@
       <section class="section location" id="ubicacion" aria-labelledby="ubicacion-title">
         <div class="section-heading">
           <p class="eyebrow">Visitenos</p>
-          <h2 id="ubicacion-title">Donde estamos</h2>
-          <p>Estamos en Sterling, VA, con fruta fresca, minutas y antojitos tropicales para disfrutar en persona.</p>
+          <h2 id="ubicacion-title">Ahora tenemos dos ubicaciones</h2>
+          <p>La ubicacion de Sterling es nuestra principal. Tambien puede visitarnos en la nueva parada de Route 15 en Leesburg.</p>
         </div>
 
-        <div class="location-layout">
-          <div class="location-details">
-            <article>
-              <span>Direccion</span>
-              <strong>46859 Leesburg Pike, Sterling, VA 20164</strong>
-            </article>
-            <article>
-              <span>Horario</span>
-              <strong>Domingo a viernes: 10:00 AM - 9:30 PM</strong>
-            </article>
-            <article class="closed">
-              <span>Sabado</span>
-              <strong>Cerrado los sabados</strong>
-            </article>
-            <div class="location-actions">
-              <a class="btn btn-primary" href="https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA" target="_blank" rel="noopener">Como llegar</a>
-              <a class="btn btn-secondary" href="https://maps.apple/p/sN~ZwnLskBm_bJ" target="_blank" rel="noopener">Abrir en Apple Maps</a>
+        <div class="locations-grid">
+          <article class="location-card location-card-featured">
+            <img src="assets/images/trailer-1000.webp" alt="Ubicacion principal de Tutifrutsy en Sterling" width="1000" height="1779" loading="lazy" decoding="async">
+            <div class="location-card-body">
+              <p class="eyebrow">Ubicacion principal</p>
+              <h3>Sterling</h3>
+              <p>Nuestra ubicacion principal sigue sirviendo fruta preparada, minutas, bebidas naturales, pan dulce y antojitos tropicales.</p>
+              <dl>
+                <div>
+                  <dt>Direccion</dt>
+                  <dd>46859 Leesburg Pike, Sterling, VA 20164</dd>
+                </div>
+                <div>
+                  <dt>Horario</dt>
+                  <dd>Domingo a viernes: 10:00 AM - 9:30 PM</dd>
+                </div>
+                <div>
+                  <dt>Sabado</dt>
+                  <dd>Cerrado los sabados</dd>
+                </div>
+              </dl>
+              <div class="location-actions">
+                <a class="btn btn-primary" href="https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA" data-map-link data-google-maps="https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA" data-apple-maps="https://maps.apple/p/sN~ZwnLskBm_bJ" target="_blank" rel="noopener">Como llegar</a>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <div class="map-panel" aria-label="Mapa de ubicacion de Tutifrutsy">
-            <div>
-              <span>Mapa</span>
-              <strong>46859 Leesburg Pike</strong>
-              <p>Sterling, VA 20164</p>
-              <a href="https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          <article class="location-card">
+            <img src="assets/images/route15-stand-768.webp" alt="Nuevo trailer de Tutifrutsy en Route 15 Leesburg" width="768" height="1024" loading="lazy" decoding="async">
+            <div class="location-card-body">
+              <p class="eyebrow">Nueva ubicacion</p>
+              <h3>Route 15 - Leesburg</h3>
+              <p>Estamos en el parqueo de Shell sobre James Monroe Hwy, una parada facil para quienes pasan entre Leesburg, Point of Rocks y Frederick.</p>
+              <dl>
+                <div>
+                  <dt>Direccion</dt>
+                  <dd>14425 James Monroe Hwy, Leesburg, VA 20176</dd>
+                </div>
+                <div>
+                  <dt>Referencia</dt>
+                  <dd>Parqueo de Shell, sobre Route 15</dd>
+                </div>
+                <div>
+                  <dt>Horario</dt>
+                  <dd>Domingo a viernes: 10:00 AM - 9:30 PM</dd>
+                </div>
+                <div>
+                  <dt>Sabado</dt>
+                  <dd>Cerrado los sabados</dd>
+                </div>
+              </dl>
+              <div class="location-actions">
+                <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=14425%20James%20Monroe%20Hwy%2C%20Leesburg%2C%20VA%2020176" data-map-link data-google-maps="https://www.google.com/maps/search/?api=1&query=14425%20James%20Monroe%20Hwy%2C%20Leesburg%2C%20VA%2020176" data-apple-maps="https://maps.apple.com/?address=14425%20James%20Monroe%20Hwy,%20Leesburg,%20VA%2020176" target="_blank" rel="noopener">Como llegar</a>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
     </main>
@@ -492,17 +575,22 @@
           <img src="assets/logo-360.webp" alt="Logo de Tutifrutsy" width="84" height="84" loading="lazy" decoding="async">
           <div>
             <strong>Tutifrutsy</strong>
-            <p>Fruta preparada, minutas y sabores tropicales en Sterling, VA.</p>
+            <p>Fruta preparada, minutas y sabores tropicales en Sterling y Leesburg, VA.</p>
           </div>
         </div>
         <div>
-          <h2>Direccion</h2>
+          <h2>Sterling</h2>
           <p>46859 Leesburg Pike<br>Sterling, VA 20164</p>
         </div>
         <div>
+          <h2>Leesburg</h2>
+          <p>14425 James Monroe Hwy<br>Leesburg, VA 20176</p>
+          <p>En el parqueo de Shell sobre Route 15</p>
+        </div>
+        <div>
           <h2>Horario</h2>
-          <p>Domingo a viernes<br>10:00 AM - 9:30 PM</p>
-          <p>Cerrado los sabados</p>
+          <p>Sterling: domingo a viernes<br>10:00 AM - 9:30 PM</p>
+          <p>Leesburg: revise TikTok para horario del dia.</p>
         </div>
         <div>
           <h2>Redes</h2>

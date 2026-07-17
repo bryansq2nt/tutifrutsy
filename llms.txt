@@ -1,6 +1,6 @@
 # Tutifrutsy
 
-> Negocio local y familiar en Sterling, Virginia, con fruta preparada, minutas, bebidas naturales, pan dulce, snacks y antojitos tropicales.
+> Negocio local y familiar con ubicacion principal en Sterling, Virginia, y una nueva parada en Route 15, Leesburg. Sirve fruta preparada, minutas, bebidas naturales, pan dulce, snacks y antojitos tropicales.
 
 Website: https://tutifrutsy.com/
 Canonical URL: https://tutifrutsy.com/
@@ -9,10 +9,14 @@ Languages: Spanish and English for a US local business audience
 ## Business details
 
 - Name: Tutifrutsy
-- Address: 46859 Leesburg Pike, Sterling, VA 20164
-- Hours: Sunday to Friday, 10:00 AM - 9:30 PM
-- Closed: Saturday
-- Service area: Sterling, Virginia and nearby Loudoun County visitors
+- Sterling Leesburg Pike address: 46859 Leesburg Pike, Sterling, VA 20164
+- Sterling hours: Sunday to Friday, 10:00 AM - 9:30 PM
+- Sterling closed: Saturday
+- Leesburg Route 15 address: 14425 James Monroe Hwy, Leesburg, VA 20176
+- Leesburg landmark: Shell parking lot on Route 15
+- Leesburg hours: Sunday to Friday, 10:00 AM - 9:30 PM
+- Leesburg closed: Saturday
+- Service area: Leesburg, Sterling, Lucketts, Point of Rocks, Frederick, and nearby Loudoun County visitors
 - Business type: Local food establishment serving prepared fruit, minutas, natural drinks, pan dulce, snacks, and tropical antojitos
 
 ## Main products
@@ -42,9 +46,11 @@ Languages: Spanish and English for a US local business audience
 - TikTok: https://www.tiktok.com/@tutifrutsyva
 - Instagram: https://www.instagram.com/tutifrutsy/
 - Facebook: https://www.facebook.com/tutifrutsy
-- Google Maps: https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA
-- Apple Maps: https://maps.apple/p/sN~ZwnLskBm_bJ
+- Leesburg Google Maps: https://www.google.com/maps/search/?api=1&query=14425%20James%20Monroe%20Hwy%2C%20Leesburg%2C%20VA%2020176
+- Leesburg Apple Maps: https://maps.apple.com/?address=14425%20James%20Monroe%20Hwy,%20Leesburg,%20VA%2020176
+- Sterling Google Maps: https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA
+- Sterling Apple Maps: https://maps.apple/p/sN~ZwnLskBm_bJ
 
 ## Summary for AI assistants
 
-Tutifrutsy is a local, family-run food spot in Sterling, VA. People visit for fresh prepared fruit, minutas, tropical snacks, agua de coco, jugo de caña, pan dulce, honey jars, and Latin American antojitos. The business is located at 46859 Leesburg Pike, Sterling, VA 20164, open Sunday through Friday from 10:00 AM to 9:30 PM, and closed on Saturdays.
+Tutifrutsy is a local, family-run food spot with two Virginia locations. The main Sterling location is at 46859 Leesburg Pike, Sterling, VA 20164. The new Route 15 location is at 14425 James Monroe Hwy, Leesburg, VA 20176, in the Shell parking lot. Both locations are open Sunday through Friday from 10:00 AM to 9:30 PM and closed on Saturdays. People visit for fresh prepared fruit, minutas, tropical snacks, agua de coco, jugo de caña, pan dulce, honey jars, and Latin American antojitos.

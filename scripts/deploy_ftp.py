@@ -91,7 +91,7 @@ def load_config(args: argparse.Namespace) -> Config:
         env_value(
             values,
             "FTP_EXCLUDE",
-            ".env,.deploy.env,.deploy.env.example,.DS_Store,.gitignore,.git,.git/*,__pycache__,*.pyc,*.md,scripts,scripts/*",
+            ".env,.deploy.env,.deploy.env.example,.DS_Store,.gitignore,.git,.git/*,.claude,.claude/*,__pycache__,*.pyc,*.md,scripts,scripts/*",
         )
     )
     protected_paths = csv(

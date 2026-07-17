@@ -75,16 +75,56 @@ window.addEventListener("resize", () => {
   }
 });
 
+const userAgent = navigator.userAgent || "";
+const isAndroid = /Android/i.test(userAgent);
+const isIOS = /iPad|iPhone|iPod/i.test(userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isSafari = /^((?!chrome|android|crios|fxios|edg|opr).)*safari/i.test(userAgent);
+
+document.querySelectorAll("[data-map-link]").forEach((link) => {
+  const googleMapsUrl = link.dataset.googleMaps;
+  const appleMapsUrl = link.dataset.appleMaps;
+  if (!googleMapsUrl || !appleMapsUrl) return;
+
+  link.href = !isAndroid && (isIOS || isSafari) ? appleMapsUrl : googleMapsUrl;
+});
+
 const tiktokSection = document.querySelector("[data-tiktok-lazy]");
-let tiktokLoaded = false;
+let tiktokLoadStarted = false;
+
+const processTikTokEmbeds = () => {
+  const load = () => {
+    if (window.tiktokEmbed && typeof window.tiktokEmbed.load === "function") {
+      window.tiktokEmbed.load();
+    }
+  };
+
+  load();
+  window.setTimeout(load, 450);
+  window.setTimeout(load, 1200);
+  window.setTimeout(load, 2500);
+};
 
 const loadTikTokEmbeds = () => {
-  if (tiktokLoaded) return;
-  tiktokLoaded = true;
+  if (!tiktokSection) return;
+
+  if (tiktokLoadStarted) {
+    processTikTokEmbeds();
+    return;
+  }
+
+  tiktokLoadStarted = true;
+
+  const existingScript = document.querySelector('script[src*="tiktok.com/embed.js"]');
+  if (existingScript) {
+    existingScript.addEventListener("load", processTikTokEmbeds, { once: true });
+    processTikTokEmbeds();
+    return;
+  }
 
   const script = document.createElement("script");
   script.src = "https://www.tiktok.com/embed.js";
   script.async = true;
+  script.addEventListener("load", processTikTokEmbeds, { once: true });
   document.body.appendChild(script);
 };
 
@@ -118,6 +158,8 @@ if (tiktokSection) {
     link.addEventListener("focus", loadTikTokEmbeds, { once: true });
     link.addEventListener("pointerenter", loadTikTokEmbeds, { once: true });
   });
+
+  window.addEventListener("pageshow", processTikTokEmbeds);
 }
 
 const featuredCarousel = document.querySelector("[data-featured-carousel]");

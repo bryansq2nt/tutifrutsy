@@ -1,6 +1,6 @@
 # Tutifrutsy
 
-Sitio web estatico para Tutifrutsy, un negocio local y familiar en Sterling, Virginia. El sitio esta hecho con HTML, CSS y JavaScript puro, sin frameworks ni proceso de build.
+Sitio web estatico para Tutifrutsy, un negocio local y familiar con ubicacion principal en Sterling, Virginia, y una nueva parada en Route 15, Leesburg. El sitio esta hecho con HTML, CSS y JavaScript puro, sin frameworks ni proceso de build.
 
 ## Como abrir el sitio localmente
 
@@ -37,6 +37,8 @@ assets/images/agua-coco.jpg
 assets/images/jugo-cana.jpg
 assets/images/pan-dulce.jpg
 assets/images/trailer.jpg
+assets/images/route15-stand-768.webp
+assets/images/route15-fruit-768.webp
 ```
 
 Puedes reemplazar cada archivo manteniendo el mismo nombre. Asi no tienes que cambiar el HTML.
@@ -44,6 +46,7 @@ Puedes reemplazar cada archivo manteniendo el mismo nombre. Asi no tienes que ca
 Notas:
 
 - `hero.jpg` fue creado en formato panoramico a partir de una foto real del stand.
+- `route15-stand-768.webp` y `route15-fruit-768.webp` son fotos reales de la nueva ubicacion de Route 15 en Leesburg.
 - `agua-coco.jpg` y `jugo-cana.jpg` usan fotos reales del puesto como apoyo visual. Si luego tienes fotos exactas de agua de coco o jugo de caña, reemplaza esos archivos con el mismo nombre.
 - `pan-dulce.jpg` usa una foto real de snacks/antojitos. Si luego tienes foto exacta de pan dulce, reemplaza ese archivo con el mismo nombre.
 

@@ -5,19 +5,19 @@
 Title:
 
 ```text
-Tutifrutsy | Fruta preparada y minutas en Sterling, VA
+Tutifrutsy | Fruta preparada en Sterling y Leesburg, VA
 ```
 
 Description:
 
 ```text
-Tutifrutsy en Sterling, VA: fruta preparada, minutas, agua de coco, jugo de caña, pan dulce y antojitos tropicales.
+Tutifrutsy en Sterling y Leesburg, VA: fruta preparada, minutas, agua de coco, jugo de caña y antojitos tropicales en Sterling y Route 15.
 ```
 
 Keywords:
 
 ```text
-Tutifrutsy, fruta preparada, minutas, Sterling VA, frutas tropicales, agua de coco, jugo de caña, mango preparado, antojitos latinos
+Tutifrutsy, fruta preparada, minutas, Leesburg VA, Sterling VA, Route 15, Leesburg Pike, frutas tropicales, agua de coco, jugo de caña, mango preparado, antojitos latinos
 ```
 
 ## Hero
@@ -25,19 +25,19 @@ Tutifrutsy, fruta preparada, minutas, Sterling VA, frutas tropicales, agua de co
 Titulo:
 
 ```text
-Fruta preparada, minutas y sabores tropicales en Sterling, VA
+Fruta preparada, minutas y sabores tropicales en dos ubicaciones
 ```
 
 Subtitulo:
 
 ```text
-Visitenos en Tutifrutsy y disfrute fruta fresca, minutas, agua de coco, jugo de caña, pan dulce y antojitos preparados con sabor de casa.
+Visitenos en nuestra ubicacion principal de Sterling y tambien en la nueva parada de Route 15, Leesburg. Fruta fresca, minutas, agua de coco, jugo de caña, pan dulce y antojitos preparados con sabor de casa.
 ```
 
 Botones:
 
 ```text
-Como llegar
+Ver ubicaciones
 Ver TikTok
 ```
 
@@ -110,32 +110,40 @@ Pan dulce, chips de platano, chips de yuca, semillas de maranon y botes de miel.
 ## Nuestra historia
 
 ```text
-Somos un negocio local y familiar en Sterling, Virginia. En Tutifrutsy queremos que cada cliente disfrute productos frescos, preparados con sabor y servidos con alegria.
+Somos un negocio local y familiar en Virginia. En Tutifrutsy queremos que cada cliente disfrute productos frescos, preparados con sabor y servidos con alegria.
 
 Aqui encuentran fruta preparada, minutas, bebidas naturales, pan dulce, snacks y antojitos que recuerdan ese sabor de casa. Y no lo decimos solo nosotros: nuestros clientes regresan por la fruta, las minutas, la miel y, sobre todo, por el servicio.
 
 En Tutifrutsy lo atendemos mejor que en su casa.
 ```
 
-## Ubicacion
+## Ubicaciones
 
-Direccion:
+Ubicacion principal - Sterling:
 
 ```text
 46859 Leesburg Pike, Sterling, VA 20164
 ```
 
-Horario:
+Nueva ubicacion Route 15 - Leesburg:
+
+```text
+14425 James Monroe Hwy, Leesburg, VA 20176
+En el parqueo de Shell sobre Route 15
+```
+
+Horario Sterling:
 
 ```text
 Domingo a viernes: 10:00 AM - 9:30 PM
 Sabado: cerrado
 ```
 
-Mensaje destacado:
+Horario Leesburg:
 
 ```text
-Cerrado los sabados
+Domingo a viernes: 10:00 AM - 9:30 PM
+Sabado: cerrado
 ```
 
 ## Redes sociales
