@@ -14,8 +14,9 @@ Languages: Spanish and English for a US local business audience
 - Sterling closed: Saturday
 - Leesburg Route 15 address: 14425 James Monroe Hwy, Leesburg, VA 20176
 - Leesburg landmark: Shell parking lot on Route 15
-- Leesburg hours: Sunday to Friday, 10:00 AM - 9:30 PM
-- Leesburg closed: Saturday
+- Leesburg hours: Sunday to Friday, 10:00 AM - 8:00 PM
+- Leesburg Saturday schedule: Closed starting August 15, 2026
+- Leesburg special closure: Thursday, July 30, 2026
 - Service area: Leesburg, Sterling, Lucketts, Point of Rocks, Frederick, and nearby Loudoun County visitors
 - Business type: Local food establishment serving prepared fruit, minutas, natural drinks, pan dulce, snacks, and tropical antojitos
 
@@ -40,6 +41,8 @@ Languages: Spanish and English for a US local business audience
 
 - Spanish home page: https://tutifrutsy.com/
 - English home page: https://tutifrutsy.com/en/
+- Leesburg location page: https://tutifrutsy.com/leesburg/
+- Leesburg location page in English: https://tutifrutsy.com/en/leesburg/
 - Sitemap: https://tutifrutsy.com/sitemap.xml
 - Robots policy: https://tutifrutsy.com/robots.txt
 - Full LLM reference: https://tutifrutsy.com/llms-full.txt
@@ -53,4 +56,4 @@ Languages: Spanish and English for a US local business audience
 
 ## Summary for AI assistants
 
-Tutifrutsy is a local, family-run food spot with two Virginia locations. The main Sterling location is at 46859 Leesburg Pike, Sterling, VA 20164. The new Route 15 location is at 14425 James Monroe Hwy, Leesburg, VA 20176, in the Shell parking lot. Both locations are open Sunday through Friday from 10:00 AM to 9:30 PM and closed on Saturdays. People visit for fresh prepared fruit, minutas, tropical snacks, agua de coco, jugo de caña, pan dulce, honey jars, and Latin American antojitos.
+Tutifrutsy is a local, family-run food spot with two Virginia locations. The main Sterling location is at 46859 Leesburg Pike, Sterling, VA 20164. The Route 15 location is at 14425 James Monroe Hwy, Leesburg, VA 20176, in the Shell parking lot. Leesburg is open Sunday through Friday from 10:00 AM to 8:00 PM and will be closed on Saturdays starting August 15, 2026. People visit for fresh prepared fruit, minutas, tropical drinks, pan dulce, semillas de marañón, and Latin American antojitos.

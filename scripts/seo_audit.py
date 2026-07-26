@@ -13,6 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = "https://tutifrutsy.com/"
 EN_URL = "https://tutifrutsy.com/en/"
+LEESBURG_URL = "https://tutifrutsy.com/leesburg/"
+EN_LEESBURG_URL = "https://tutifrutsy.com/en/leesburg/"
 GOOGLE_MAPS_URL = "https://maps.app.goo.gl/EFCsfvaZtR2ZxycMA"
 APPLE_MAPS_URL = "https://maps.apple/p/sN~ZwnLskBm_bJ"
 MAX_META_DESCRIPTION = 160
@@ -160,6 +162,70 @@ def audit_html(failures: list[str]) -> None:
     audit_page("index.html", SITE_URL, "es-US", failures)
     audit_page("en/index.html", EN_URL, "en-US", failures)
 
+    relative_path = "leesburg/index.html"
+    path = ROOT / relative_path
+    parser = HeadParser()
+    html = path.read_text(encoding="utf-8")
+    parser.feed(html)
+    title = parser.title
+    description = parser.meta.get(("name", "description"), "")
+
+    require('<html lang="es-US">' in html, f"{relative_path} html lang is es-US", failures)
+    require(bool(title), f"{relative_path} title tag exists", failures)
+    require(len(title) <= MAX_TITLE, f"{relative_path} title is {len(title)} chars (<= {MAX_TITLE})", failures)
+    require(50 <= len(description) <= MAX_META_DESCRIPTION, f"{relative_path} meta description is {len(description)} chars (50-{MAX_META_DESCRIPTION})", failures)
+    require(parser.links.get("canonical") == LEESBURG_URL, f"{relative_path} canonical URL is correct", failures)
+    require(parser.alternates.get("es-US") == LEESBURG_URL, f"{relative_path} has Leesburg es-US hreflang", failures)
+    require(parser.alternates.get("en-US") == EN_LEESBURG_URL, f"{relative_path} has Leesburg en-US hreflang", failures)
+    require(parser.alternates.get("x-default") == LEESBURG_URL, f"{relative_path} has Leesburg x-default hreflang", failures)
+    require(parser.meta.get(("property", "og:url")) == LEESBURG_URL, f"{relative_path} Open Graph URL is correct", failures)
+    require('data-expire-after="2026-07-30"' in html, f"{relative_path} special closure has an expiration date", failures)
+    require("10:00 a.m. – 8:00 p.m." in html, f"{relative_path} includes Leesburg hours", failures)
+    require("Cerrado a partir del 15 de agosto" in html, f"{relative_path} includes Saturday closure", failures)
+    require('src="/leesburg/script.js"' in html, f"{relative_path} loads its script", failures)
+    require('href="/leesburg/styles.css' in html, f"{relative_path} loads its stylesheet", failures)
+    require('href="/en/leesburg/"' in html and 'data-target-lang="en"' in html, f"{relative_path} links to English", failures)
+    require(bool(parser.json_ld_blocks), f"{relative_path} JSON-LD structured data exists", failures)
+
+    for block in parser.json_ld_blocks:
+        data = json.loads(block)
+        require(has_schema_type(data, "FoodEstablishment"), f"{relative_path} JSON-LD includes FoodEstablishment", failures)
+        require(has_schema_type(data, "WebPage"), f"{relative_path} JSON-LD includes WebPage", failures)
+        require(has_schema_type(data, "Menu"), f"{relative_path} JSON-LD includes menu structured data", failures)
+        require(has_schema_type(data, "MenuItem"), f"{relative_path} JSON-LD includes menu items", failures)
+
+    relative_path = "en/leesburg/index.html"
+    path = ROOT / relative_path
+    parser = HeadParser()
+    html = path.read_text(encoding="utf-8")
+    parser.feed(html)
+    title = parser.title
+    description = parser.meta.get(("name", "description"), "")
+
+    require('<html lang="en-US">' in html, f"{relative_path} html lang is en-US", failures)
+    require(bool(title), f"{relative_path} title tag exists", failures)
+    require(len(title) <= MAX_TITLE, f"{relative_path} title is {len(title)} chars (<= {MAX_TITLE})", failures)
+    require(50 <= len(description) <= MAX_META_DESCRIPTION, f"{relative_path} meta description is {len(description)} chars (50-{MAX_META_DESCRIPTION})", failures)
+    require(parser.links.get("canonical") == EN_LEESBURG_URL, f"{relative_path} canonical URL is correct", failures)
+    require(parser.alternates.get("es-US") == LEESBURG_URL, f"{relative_path} has Leesburg es-US hreflang", failures)
+    require(parser.alternates.get("en-US") == EN_LEESBURG_URL, f"{relative_path} has Leesburg en-US hreflang", failures)
+    require(parser.alternates.get("x-default") == LEESBURG_URL, f"{relative_path} has Leesburg x-default hreflang", failures)
+    require(parser.meta.get(("property", "og:url")) == EN_LEESBURG_URL, f"{relative_path} Open Graph URL is correct", failures)
+    require('data-expire-after="2026-07-30"' in html, f"{relative_path} special closure has an expiration date", failures)
+    require("10:00 a.m. – 8:00 p.m." in html, f"{relative_path} includes Leesburg hours", failures)
+    require("Closed starting August 15" in html, f"{relative_path} includes Saturday closure", failures)
+    require('src="/leesburg/script.js"' in html, f"{relative_path} loads its script", failures)
+    require('href="/leesburg/styles.css' in html, f"{relative_path} loads its stylesheet", failures)
+    require('href="/leesburg/"' in html and 'data-target-lang="es"' in html, f"{relative_path} links to Spanish", failures)
+    require(bool(parser.json_ld_blocks), f"{relative_path} JSON-LD structured data exists", failures)
+
+    for block in parser.json_ld_blocks:
+        data = json.loads(block)
+        require(has_schema_type(data, "FoodEstablishment"), f"{relative_path} JSON-LD includes FoodEstablishment", failures)
+        require(has_schema_type(data, "WebPage"), f"{relative_path} JSON-LD includes WebPage", failures)
+        require(has_schema_type(data, "Menu"), f"{relative_path} JSON-LD includes menu structured data", failures)
+        require(has_schema_type(data, "MenuItem"), f"{relative_path} JSON-LD includes menu items", failures)
+
 
 def audit_robots(failures: list[str]) -> None:
     robots = (ROOT / "robots.txt").read_text(encoding="utf-8")
@@ -173,7 +239,7 @@ def audit_sitemap(failures: list[str]) -> None:
     root = tree.getroot()
     namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     locs = [item.text for item in root.findall(".//sm:loc", namespace)]
-    for url in [SITE_URL, EN_URL, f"{SITE_URL}llms.txt", f"{SITE_URL}llms-full.txt"]:
+    for url in [SITE_URL, EN_URL, LEESBURG_URL, EN_LEESBURG_URL, f"{SITE_URL}llms.txt", f"{SITE_URL}llms-full.txt"]:
         require(url in locs, f"sitemap includes {url}", failures)
 
 
@@ -185,6 +251,9 @@ def audit_llms(failures: list[str]) -> None:
         require("Tutifrutsy" in text, f"{filename} names Tutifrutsy", failures)
         require("46859 Leesburg Pike" in text, f"{filename} includes address", failures)
         require("10:00 AM - 9:30 PM" in text, f"{filename} includes hours", failures)
+        require("10:00 AM - 8:00 PM" in text, f"{filename} includes Leesburg hours", failures)
+        require(LEESBURG_URL in text, f"{filename} includes Leesburg page", failures)
+        require(EN_LEESBURG_URL in text, f"{filename} includes English Leesburg page", failures)
         require("https://tutifrutsy.com/en/" in text, f"{filename} includes English URL", failures)
         require(GOOGLE_MAPS_URL in text, f"{filename} includes Google Maps URL", failures)
         require(APPLE_MAPS_URL in text, f"{filename} includes Apple Maps URL", failures)

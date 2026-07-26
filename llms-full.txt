@@ -8,6 +8,8 @@ Tutifrutsy is a local and family-run food establishment with its main location i
 
 Canonical Spanish website: https://tutifrutsy.com/
 Canonical English website: https://tutifrutsy.com/en/
+Canonical Leesburg page: https://tutifrutsy.com/leesburg/
+Canonical Leesburg page in English: https://tutifrutsy.com/en/leesburg/
 Canonical business name: Tutifrutsy
 Primary languages: Spanish and English
 Local market: Sterling, Leesburg, Lucketts, Point of Rocks, Frederick, and nearby Loudoun County visitors
@@ -44,8 +46,9 @@ United States
 Landmark: Shell parking lot on Route 15
 Hours:
 
-Sunday to Friday: 10:00 AM - 9:30 PM
-Saturday: Closed
+Sunday to Friday: 10:00 AM - 8:00 PM
+Saturday: Closed starting August 15, 2026
+Special closure: Thursday, July 30, 2026
 
 Google Maps:
 
